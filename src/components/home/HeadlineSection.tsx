@@ -2,7 +2,7 @@ import video from "../../assets/headline_video.mp4";
 
 const HeadlineSection = () => {
   return (
-    <div className="relative bg-gray-200 mt-16 p-8 h-0 pb-[48%] overflow-hidden">
+    <div className="relative bg-gray-200 p-8 h-0 pb-[48%] overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
         <video
           src={video}
