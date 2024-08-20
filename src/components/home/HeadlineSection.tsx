@@ -9,16 +9,22 @@ const HeadlineSection = () => {
           autoPlay
           loop
           muted
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover filter brightness-50"
         ></video>
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-        <h1 className="text-9xl font-bold text-white text-center mb-5">Contsol Dev</h1>
-        <h2 className="text-3xl font-semibold text-white text-center">Continuous Development</h2>
-        <h2 className="text-3xl font-semibold text-white text-center">Innovative Solutions</h2>
+        <h1 className="text-9xl font-bold text-white text-center mb-5">
+          Contsol Dev
+        </h1>
+        <h2 className="text-3xl font-semibold text-white text-center">
+          Continuous Development
+        </h2>
+        <h2 className="text-3xl font-semibold text-white text-center">
+          Innovative Solutions
+        </h2>
       </div>
     </div>
   );
-}
+};
 
 export default HeadlineSection;

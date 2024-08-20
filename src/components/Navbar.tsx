@@ -73,6 +73,14 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
+                      href="/services/it-manpower-sharing"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      IT Manpower Sharing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="#"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
@@ -125,11 +133,7 @@ const Navbar = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d={
-                  !isOpen
-                    ? "M4 6h16M4 12h16m-7 6h7"
-                    : "M6 18L18 6M6 6l12 12"
-                }
+                d={!isOpen ? "M4 6h16M4 12h16m-7 6h7" : "M6 18L18 6M6 6l12 12"}
               />
             </svg>
           </button>
