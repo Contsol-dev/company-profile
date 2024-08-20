@@ -16,11 +16,28 @@ const ClientSection = () => {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={5}
-          slidesPerView={6}
           loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 2,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 3,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 4,
+            },
+            // when window width is >= 1280px
+            1280: {
+              slidesPerView: 6,
+            },
           }}
           className="w-full"
         >

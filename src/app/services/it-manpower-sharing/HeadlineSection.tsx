@@ -14,10 +14,10 @@ const HeadlineSection = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-        <h1 className="text-5xl font-bold text-white text-center mb-5 font-sans">
+        <h1 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-white text-center mb-5 font-sans">
           IT Manpower Sharing
         </h1>
-        <p className="mx-80 text-2xl text-white text-center font-sans">
+        <p className="xl:mx-80 lg:mx-60 md:mx-40 mx-20 xl:text-2xl lg:text-xl md:text-lg text-base text-white text-center font-sans">
           Struggling with the cost of building a team of developers? IT staff
           augmentation offers a powerful alternative that sets itself apart from
           outsourcing and recruitment. Hire a dedicated IT team to provide
@@ -27,13 +27,13 @@ const HeadlineSection = () => {
         <div className="mt-8 flex justify-center space-x-4">
           <Link
             href="#"
-            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-xl hover:bg-cont-secondary"
+            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold xl:text-xl lg:text-lg md:text-base text-sm hover:bg-cont-secondary"
           >
             Hire Dedicated IT Team
           </Link>
           <Link
             href="#"
-            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-xl hover:bg-cont-secondary"
+            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold xl:text-xl lg:text-lg md:text-base text-sm hover:bg-cont-secondary"
           >
             Join as Talent
           </Link>

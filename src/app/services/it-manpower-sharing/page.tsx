@@ -8,6 +8,8 @@ import Gkd from "../../../assets/logo-gkd.jpg";
 import Dlhk from "../../../assets/logo-dlhk.png";
 import ClientSection from "./ClientSection";
 import ExpertSection from "./ExpertSection";
+import HireSection from "./HireSection";
+import TechSection from "./TechSection";
 
 export default function ITManpowerSharing() {
   return (
@@ -18,50 +20,10 @@ export default function ITManpowerSharing() {
       <hr />
       <ClientSection />
       <ExpertSection />
-
-      {/* Hire Our Experts Section */}
-      <section className="py-16">
-        <h2 className="text-3xl font-bold text-gray-900">Hire Our Experts</h2>
-        <ul className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <li className="text-lg text-gray-700">Project Manager</li>
-          <li className="text-lg text-gray-700">Frontend Developer</li>
-          <li className="text-lg text-gray-700">Backend Developer</li>
-          <li className="text-lg text-gray-700">Mobile App Developer</li>
-          <li className="text-lg text-gray-700">UI/UX Designer</li>
-          <li className="text-lg text-gray-700">System Analyst</li>
-          <li className="text-lg text-gray-700">Data Specialist</li>
-          <li className="text-lg text-gray-700">IoT Engineer</li>
-          <li className="text-lg text-gray-700">AI Engineer</li>
-          <li className="text-lg text-gray-700">Network Engineer</li>
-        </ul>
-      </section>
-
-      {/* How to Hire Section */}
-      <section className="py-16">
-        <h2 className="text-3xl font-bold text-gray-900">
-          How to Hire Cont Solution’s Talents
-        </h2>
-        <ul className="mt-8 space-y-4 text-lg text-gray-700">
-          <li>Initial discussion with our account team</li>
-          <li>
-            Based on the discussion, we will provide recommendations for
-            suitable talent
-          </li>
-          <li>Send detailed proposal</li>
-          <li>Provide profiles & CVs of available talent</li>
-          <li>Talent selection and matching process</li>
-          <li>Final agreement (End-Agreement)</li>
-          <li>Onboarding and remote talent support</li>
-        </ul>
-        <div className="mt-8">
-          <a
-            href="https://wa.me/your-number"
-            className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700"
-          >
-            Free Consultancy
-          </a>
-        </div>
-      </section>
+      <hr />
+      <HireSection />
+      <hr />
+      <TechSection />
 
       {/* Technology Stack Section */}
       <section className="py-16">

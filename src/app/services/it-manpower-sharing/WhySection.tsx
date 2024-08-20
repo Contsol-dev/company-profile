@@ -3,11 +3,11 @@ import { CheckIcon } from "@heroicons/react/solid";
 const WhySection = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-100 px-40">
-      <div className="md:w-1/3 text-8xl font-bold text-sky-950 font-sans">
+      <div className="md:w-1/3 xl:text-8xl lg:text-7xl md:text-6xl sm:text-8xl text-8xl font-bold text-sky-950 font-sans">
         Why Choose Us?
       </div>
       <div className="md:w-2/3 md:ml-8 mt-8 md:mt-0">
-        <ul className="mt-8 space-y-4 text-lg font-sans text-gray-700 my-5">
+        <ul className="mt-8 space-y-4 xl:text-xl lg:text-xl text-xl sm:text-base font-sans text-gray-700 my-5">
           <li className="flex items-start">
             <CheckIcon className="w-6 h-6 text-teal-500 mr-3" />
             <span>
