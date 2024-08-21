@@ -18,10 +18,6 @@ export async function POST(req) {
       from: process.env.SMTP_SENDER,
       to: process.env.SMTP_RECEIVER,
       subject: fullname,
-      envelope: {
-        from: `Daemon <${process.env.SMTP_SENDER}>`,
-        to: process.env.SMTP_RECEIVER
-      },
       html: `<b>Whatsapp:</b> ${country}-${wanumber}\n
             <b>Email:</b> ${email}\n\n
             <b>Message:</b>\n
