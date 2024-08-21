@@ -65,7 +65,7 @@ const Navbar = () => {
                 <ul className="flex flex-col lg:flex-row gap-6 list-none m-0 p-0 lg:gap-8 lg:p-6">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/website-development"
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
                       Web Development
@@ -77,6 +77,14 @@ const Navbar = () => {
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     >
                       IT Manpower Sharing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/product-development"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      Product Development
                     </Link>
                   </li>
                   <li>

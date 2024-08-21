@@ -17,12 +17,15 @@ const HeadlineSection = () => {
         <h1 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-white text-center mb-5 font-sans">
           IT Manpower Sharing
         </h1>
+        <h1 className="xl:text-3xl lg:text-2xl md:text-xl text-lg font-bold text-white text-center mb-2 font-sans">
+          Struggling with the cost of building a team of developers?
+        </h1>
         <p className="xl:mx-80 lg:mx-60 md:mx-40 mx-20 xl:text-2xl lg:text-xl md:text-lg text-base text-white text-center font-sans">
-          Struggling with the cost of building a team of developers? IT staff
-          augmentation offers a powerful alternative that sets itself apart from
-          outsourcing and recruitment. Hire a dedicated IT team to provide
-          specialized expertise, drive innovation, ensure compliance, and reduce
-          costs, allowing your business to focus on its core functions.
+          IT staff augmentation offers a powerful alternative that sets itself
+          apart from outsourcing and recruitment. Hire a dedicated IT team to
+          provide specialized expertise, drive innovation, ensure compliance,
+          and reduce costs, allowing your business to focus on its core
+          functions.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <Link

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Gkd from "../../../assets/logo-gkd.jpg";
-import Dlhk from "../../../assets/logo-dlhk.png";
+import Gkd from "../../../assets/clients/logo-gkd.png";
+import Dlhk from "../../../assets/clients/logo-dlhk.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -45,7 +45,7 @@ const ClientSection = () => {
             <Image
               src={Gkd}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
+              className="h-[150px] w-auto object-contain mix-blend-screen"
             />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">

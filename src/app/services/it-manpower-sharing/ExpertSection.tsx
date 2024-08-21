@@ -4,8 +4,8 @@ import { Autoplay } from "swiper/modules";
 
 const ExpertSection = () => {
   return (
-    <section className="flex flex-col items-center p-10 bg-gray-100 px-20">
-      <h2 className="text-5xl font-bold text-sky-950 text-center mb-5 font-sans">
+    <section className="flex flex-col items-center p-20 bg-sky-950">
+      <h2 className="text-5xl font-bold text-gray-100 text-center mb-5 font-sans">
         Hire Our Experts
       </h2>
       <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 gap-5 lg:gap-10 xl:gap-10">
