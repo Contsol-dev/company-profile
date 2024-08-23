@@ -1,0 +1,42 @@
+export const portfolioData = [
+  {
+    id: "1",
+    type: "Mobile Apps",
+    name: "BacaLagi",
+    image:"../bacalagi-background.png",
+    overview:"",
+    overlay:"../bacalagi-overlay.png",
+  },
+  {
+    id: "2",
+    type: "Mobile Apps",
+    name: "Healppy",
+    image:"../healpy-background.jpg",
+    overview:"",
+    overlay:"../healpy-overlay.png",
+  },
+  {
+    id: "3",
+    type: "Mobile Apps",
+    name: "EcoSphere",
+    image:"../ecosphere-background.jpg",
+    overview:"",
+    overlay:"../ecosphere-overlay.png",
+  },
+  {
+    id: "4",
+    type: "Website",
+    name: "Reresyc",
+    image:"../rerecyc-background.png",
+    overview:"",
+    overlay:"../rerecyc-overlay.png",
+  },
+  {
+    id: "5",
+    type: "Mobile Apps",
+    name: "TerbangAja",
+    image:"../terbangaja-background.png",
+    overview:"",
+    overlay:"../terbangaja-overlay.png",
+  },
+]
