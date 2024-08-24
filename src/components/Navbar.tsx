@@ -67,7 +67,9 @@ const Navbar = () => {
               <div className="absolute left-0 top-full w-[300px] lg:w-[600px] bg-white p-6 border shadow-lg z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <div>
-                    <h3 className="font-bold text-cont-primary mb-2">DEVELOPMENT</h3>
+                    <h3 className="font-bold text-cont-primary mb-2">
+                      DEVELOPMENT
+                    </h3>
                     <ul className="list-none">
                       <li>
                         <Link
@@ -95,7 +97,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/application-development"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Application Development
@@ -103,7 +105,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/mobile-app-development"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Mobile App Development
@@ -111,7 +113,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/iot-development"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           IoT Development
@@ -120,11 +122,13 @@ const Navbar = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-bold text-cont-primary mb-2">CREATIVE</h3>
+                    <h3 className="font-bold text-cont-primary mb-2">
+                      CREATIVE
+                    </h3>
                     <ul className="list-none">
                       <li>
                         <Link
-                          href="#"
+                          href="/services/logo-design"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Logo Design
@@ -132,7 +136,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/social-media-management"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Social Media Management
@@ -140,15 +144,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                        >
-                          Design Guidelines
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="#"
+                          href="/services/photo-product"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Photo Product
@@ -156,7 +152,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/video-ads-production"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Video Ads Production
@@ -294,4 +290,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
