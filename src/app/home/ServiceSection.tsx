@@ -1,16 +1,17 @@
 import { Typography } from "@material-tailwind/react";
 
 const services = [
-  { icon: "@/assets/logo.png", title: "IT Manpower Sharing" },
-  { icon: "@/assets/logo.png", title: "Product Development" },
-  { icon: "@/assets/logo.png", title: "Website Development" },
-  { icon: "@/assets/logo.png", title: "Mobile App Development" },
-  { icon: "@/assets/logo.png", title: "IoT Development" },
-  { icon: "@/assets/logo.png", title: "Data Analysis" },
-  { icon: "@/assets/logo.png", title: "Network Installation" },
-  { icon: "@/assets/logo.png", title: "AI Engineering" },
-  { icon: "@/assets/logo.png", title: "UI / UX Design" },
+  { icon: "@/assets/svgs/ic_artificial_intelligence.svg", title: "IT Manpower Sharing" },
+  { icon: "@/assets/svgs/ic_cpu.svg", title: "Product Development" },
+  { icon: "@/assets/svgs/ic_website.svg", title: "Website Development" },
+  { icon: "@/assets/svgs/ic_mobile_app.svg", title: "Mobile App Development" },
+  { icon: "@/assets/svgs/ic_it_training.svg", title: "IoT Development" },
+  { icon: "@/assets/svgs/ic_service.svg", title: "Data Analysis" },
+  { icon: "@/assets/svgs/ic_router.svg", title: "Network Installation" },
+  { icon: "@/assets/svgs/ic_artificial_intelligence.svg", title: "AI Engineering" },
+  { icon: "@/assets/svgs/ic_laptop.svg", title: "UI / UX Design" },
 ];
+
 
 const ServicesSection = () => {
   return (
