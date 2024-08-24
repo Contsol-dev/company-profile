@@ -4,7 +4,7 @@ import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
 import photo from "../../../assets/product-development.jpg";
-import PricingSection from "./PricingSection";
+import PricingSection from "../components/PricingSection";
 
 export default function LogoDesign() {
   const accordionData = [
@@ -47,6 +47,43 @@ export default function LogoDesign() {
     },
   ];
 
+  const packages = [
+    {
+      price: "500K",
+      discount: "200K",
+      benefit: [
+        "One Logo Option",
+        "High Resolution",
+        "Multiple Formats (JPEG, PNG, PDF, CDR, Ai, EPS, etc.)",
+        "Minor Revisions",
+      ],
+    },
+    {
+      price: "1000K",
+      discount: "500K",
+      benefit: [
+        "Two Logo Options",
+        "High Resolution",
+        "Multiple Formats (JPEG, PNG, PDF, CDR, Ai, EPS, etc.)",
+        "Two Major Revisions, Minor Revisions",
+      ],
+    },
+    {
+      price: "5000K",
+      discount: "3000K",
+      benefit: [
+        "Four Logo Options",
+        "Logo Philophy",
+        "High Resolution",
+        "Multiple Formats (JPEG, PNG, PDF, CDR, Ai, EPS, etc.)",
+        "Major Revisions, Minor Revisions",
+        "Mockups",
+        "Logo Guidelines",
+        "Video Animation",
+      ],
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -60,7 +97,7 @@ export default function LogoDesign() {
         button2="Design Consultation"
       />
       <HireSection accordionData={accordionData} />
-      <PricingSection />
+      <PricingSection packages={packages} />
       <FooterSection />
     </>
   );

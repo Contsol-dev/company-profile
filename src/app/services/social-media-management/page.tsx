@@ -4,7 +4,7 @@ import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
 import photo from "../../../assets/product-development.jpg";
-import PricingSection from "./PricingSection";
+import PricingSection from "../components/PricingSection";
 
 export default function SocialMediaManagement() {
   const accordionData = [
@@ -48,6 +48,48 @@ export default function SocialMediaManagement() {
     },
   ];
 
+  const packages = [
+    {
+      price: "1000K",
+      discount: "750K",
+      benefit: [
+        "15 Feed/Story Designs",
+        "Upload Every 2 Days",
+        "Audience Engagement",
+        "Content Planning & Content Calendar",
+        "Admin Posting",
+        "Captions and Hashtags",
+        "One Minor Revision per Design",
+      ],
+    },
+    {
+      price: "2500K",
+      discount: "1750K",
+      benefit: [
+        "15 Feed Designs + 6 Stories + 4 Reels",
+        "Content Planning & Content Calendar",
+        "Admin Posting",
+        "Captions and Hashtags",
+        "Reels Brainstorming",
+        "Final Report",
+        "One Minor Revision per Design",
+      ],
+    },
+    {
+      price: "5000K",
+      discount: "3000K",
+      benefit: [
+        "30 Feed Designs + 12 Stories + 8 Reels",
+        "Content Planning & Content Calendar",
+        "Admin Posting",
+        "Captions and Hashtags",
+        "Reels Brainstorming",
+        "Final Report",
+        "One Minor Revision per Design",
+      ],
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -61,7 +103,7 @@ export default function SocialMediaManagement() {
         button2="Strategy Consultation"
       />
       <HireSection accordionData={accordionData} />
-      <PricingSection />
+      <PricingSection packages={packages} />
       <FooterSection />
     </>
   );

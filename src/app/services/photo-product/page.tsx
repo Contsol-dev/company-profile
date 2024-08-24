@@ -5,6 +5,7 @@ import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
 import photo from "../../../assets/product-development.jpg";
 import PhotoServicesAccordion from "./PhotoServicesAccordion";
+import PricingSection from "../components/PricingSection";
 
 export default function PhotoProduct() {
   const accordionData = [
@@ -46,6 +47,39 @@ export default function PhotoProduct() {
     },
   ];
 
+  const packages = [
+    {
+      price: "500K",
+      discount: "250K",
+      benefit: [
+        "10 Photos, with 25 Photo Options",
+        "Consultation",
+        "Theme Selection",
+        "Accessories",
+      ],
+    },
+    {
+      price: "1000K",
+      discount: "500K",
+      benefit: [
+        "10 Photos, with 25 Photo Options",
+        "Consultation",
+        "Theme Selection",
+        "Accessories",
+      ],
+    },
+    {
+      price: "2000K",
+      discount: "1250K",
+      benefit: [
+        "10 Photos, with 25 Photo Options",
+        "Consultation",
+        "Theme Selection",
+        "Accessories",
+      ],
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -60,6 +94,7 @@ export default function PhotoProduct() {
       />
       <HireSection accordionData={accordionData} />
       <PhotoServicesAccordion />
+      <PricingSection packages={packages} />
       <FooterSection />
     </>
   );

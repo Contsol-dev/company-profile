@@ -47,14 +47,19 @@ const PhotoServicesAccordion = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center px-20 bg-gray-100 space-x-3">
+    <section className="flex flex-col items-center px-10 py-10 md:px-20 lg:px-20 xl:px-20 bg-cont-primary space-x-3">
+      <div className="xl:text-4xl lg:text-3xl md:text-4xl sm:text-4xl text-2xl font-bold text-gray-100 font-sans mb-4">
+        Photo Services
+      </div>
       <div className="flex flex-row space-x-4">
         {services.map((service, index) => (
           <div
             key={index}
             onClick={() => handleIndex(index)}
             className={`relative cursor-pointer transition-all duration-300 ease-in-out ${
-              activeIndex === index ? "flex-shrink-0 sm:w-60 md:w-80" : "w-auto"
+              activeIndex === index
+                ? "flex-shrink-0 sm:w-60 w-40 md:w-80"
+                : "w-auto"
             }`}
           >
             <img
@@ -66,7 +71,7 @@ const PhotoServicesAccordion = () => {
         ))}
       </div>
       {activeIndex !== null && (
-        <div className="text-black p-5 w-full border-b border-gray-400">
+        <div className="text-gray-100 p-5 w-full border-b border-gray-400">
           <h3 className="text-lg font-semibold">
             {services[activeIndex].title}
           </h3>
