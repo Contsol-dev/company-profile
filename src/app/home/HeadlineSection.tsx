@@ -13,15 +13,18 @@ const HeadlineSection = () => {
         ></video>
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-        <h1 className="text-9xl font-bold text-white text-center mb-5">
-          Contsol Dev
+        <h1 className="text-1xl font-bold text-white text-center mb-1">
+          WELCOME TO CONT SOLUTION INDONESIA
         </h1>
-        <h2 className="text-3xl font-semibold text-white text-center">
-          Continuous Development
+        <h2 className="text-7xl font-semibold text-white text-center">
+          Continuous Development,
         </h2>
-        <h2 className="text-3xl font-semibold text-white text-center">
+        <h2 className="text-7xl font-semibold text-white text-center">
           Innovative Solutions
         </h2>
+        <button className="mt-8 px-6 py-3 bg-cont-primary text-white text-lg font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
+          LET'S GO!!!!
+        </button>
       </div>
     </div>
   );
