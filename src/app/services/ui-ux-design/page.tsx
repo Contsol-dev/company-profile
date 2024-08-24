@@ -5,48 +5,43 @@ import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
 import photo from "../../../assets/product-development.jpg";
 
-export default function DataAnalysis() {
+export default function UiUxDesign() {
   const accordionData = [
     {
-      title:
-        "Our data team has 3+ years of expertise in analytics and visualization",
+      title: "Our team has 3+ years of UI/UX design experience.",
       content:
-        "With over three years of experience, our data analysis team excels in various techniques, including predictive analytics and data visualization.",
+        "With over three years of experience, our UI/UX design team boasts a portfolio across various industries, ensuring designs tailored to your target audience.",
+    },
+    {
+      title: "We complete designs in 7-30 days, tailored to your needs.",
+      content:
+        "We can complete UI/UX design projects within 7 to 30 days, depending on complexity and specific needs.",
+    },
+    {
+      title: "Choose page or feature-based pricing to fit your project.",
+      content:
+        "Choose from our flexible pricing models—page or feature-based pricing—that are customized to fit your project's requirements and budget.",
+    },
+    {
+      title: "No extra fees for minor revisions during development.",
+      content:
+        "Cont Solutions does not charge additional fees for minor design revisions during the development process.",
+    },
+    {
+      title: "We offer unlimited revisions until you're satisfied.",
+      content:
+        "If the design results do not meet your expectations, we offer revisions until you are satisfied with the final outcome.",
+    },
+    {
+      title: "Our Project Managers ensure a seamless design process.",
+      content:
+        "Our Project Managers will ensure that every design element is carefully considered, delivering an optimal user experience.",
     },
     {
       title:
-        "We deliver analysis reports in 7-30 days, based on data complexity",
+        "Our team merges aesthetics and functionality for optimal user experience.",
       content:
-        "We can deliver analysis reports within 7 to 30 days, depending on the complexity and volume of data.",
-    },
-    {
-      title:
-        "Choose project-based or subscription pricing tailored to your needs",
-      content:
-        "Choose from our flexible pricing models—project-based or subscription pricing—that are tailored to your analysis needs.",
-    },
-    {
-      title: "No extra fees for minor report updates during the project",
-      content:
-        "Cont Solutions does not charge additional fees for minor report updates during the project period.",
-    },
-    {
-      title:
-        "We offer free revisions until the analysis meets your expectations",
-      content:
-        "If the analysis results do not meet your expectations, we offer free revisions until the results align with your business needs.",
-    },
-    {
-      title:
-        "Our Project Managers ensure data quality and accuracy throughout the process",
-      content:
-        "Our Project Managers will oversee the entire analysis process, ensuring the quality and accuracy of the presented data.",
-    },
-    {
-      title:
-        "Our team turns raw data into valuable insights for strategic decisions",
-      content:
-        "Our team is skilled at transforming raw data into valuable insights, ensuring you can make better and more strategic decisions.",
+        "Our team excels in merging aesthetics and functionality, ensuring your design not only looks great but also performs well.",
     },
   ];
 
@@ -54,13 +49,13 @@ export default function DataAnalysis() {
     <>
       <Navbar />
       <HeadlineSection
-        title="Data Analysis"
-        subhead1="Looking to Make Smarter, Data-Driven Business Decisions?"
+        title="UI/UX Design"
+        subhead1="Looking to Create an Engaging and Intuitive User Experience?"
         subhead2=""
-        caption="Our data analysis services provide in-depth and actionable insights, helping you understand trends, identify opportunities, and address business challenges. We process and analyze data with the right approach, ensuring accurate and relevant results. Choose our data analysis services for fact-based and strategic solutions."
+        caption="Our UI/UX design services focus on crafting aesthetically pleasing and user-friendly interfaces that enhance user satisfaction and engagement. We design solutions that are not only beautiful but also functional and easy to use. Choose our UI/UX design services for solutions that blend art and science in your digital experience."
         photo={photo}
-        button1="Analyze Your Data"
-        button2="Data Consultation"
+        button1="Design Your UI/UX"
+        button2="Design Consultation"
       />
       <HireSection accordionData={accordionData} />
       <FooterSection />

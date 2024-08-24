@@ -47,7 +47,7 @@ export default function PhotoProduct() {
     },
   ];
 
-  const packages = [
+  const packages1 = [
     {
       price: "500K",
       discount: "250K",
@@ -55,27 +55,44 @@ export default function PhotoProduct() {
         "10 Photos, with 25 Photo Options",
         "Consultation",
         "Theme Selection",
-        "Accessories",
+        "Photo Props",
+        "Product Research",
       ],
     },
     {
       price: "1000K",
       discount: "500K",
       benefit: [
-        "10 Photos, with 25 Photo Options",
+        "30 Photos, 50 Photo Options",
         "Consultation",
         "Theme Selection",
-        "Accessories",
+        "Photo Props",
+        "Product Research",
       ],
     },
+  ];
+
+  const packages2 = [
     {
-      price: "2000K",
-      discount: "1250K",
+      price: "1000K",
+      discount: "250K",
       benefit: [
         "10 Photos, with 25 Photo Options",
         "Consultation",
         "Theme Selection",
-        "Accessories",
+        "Photo Props",
+        "Includes Modeling (if needed)",
+      ],
+    },
+    {
+      price: "2000K",
+      discount: "1000K",
+      benefit: [
+        "30 Photos, 50 Photo Options",
+        "Consultation",
+        "Theme Selection",
+        "Photo Props",
+        "Includes Modeling (if needed)",
       ],
     },
   ];
@@ -94,7 +111,19 @@ export default function PhotoProduct() {
       />
       <HireSection accordionData={accordionData} />
       <PhotoServicesAccordion />
-      <PricingSection packages={packages} />
+      <div className="flex flex-col items-center pt-10 bg-gray-100 px-20">
+        <div className="xl:text-xl lg:text-lg md:text-xl sm:text-xl text-md font-bold text-sky-950 font-sans">
+          For Non-Food Small to Medium Products, Packaged Food, Non-Packaged
+          Food & Beverages:
+        </div>
+      </div>
+      <PricingSection packages={packages1} />
+      <div className="flex flex-col items-center pt-10 bg-gray-100 px-20">
+        <div className="xl:text-xl lg:text-lg md:text-xl sm:text-xl text-md font-bold text-sky-950 font-sans">
+          For Large Products or Products with Models:
+        </div>
+      </div>
+      <PricingSection packages={packages1} />
       <FooterSection />
     </>
   );

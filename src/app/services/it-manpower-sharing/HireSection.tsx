@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { ArrowRightIcon, ChevronDownIcon } from "@heroicons/react/solid";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const HireSection = () => {
   // State to manage which accordion is open
@@ -58,29 +58,36 @@ const HireSection = () => {
         {steps.map((step, index) => (
           <li key={index}>
             <div
-              className="flex items-center justify-between cursor-pointer py-4"
+              className="flex items-center cursor-pointer py-4"
               onClick={() => toggleAccordion(index)}
             >
-              <div className="flex items-center">
-                <b>{step.title}</b>
+              <div className="flex flex-col items-center me-4">
+                <div className="w-10 h-10 p-2 rounded-full text-sm border-4 font-semibold border-cont-primary flex items-center justify-center">
+                  {index + 1}
+                </div>
               </div>
-              <ChevronDownIcon
-                className={`ms-5 w-6 h-6 text-teal-500 transform transition-transform duration-300 ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-              />
-            </div>
-            <div
-              ref={(el) => (contentRefs.current[index] = el)}
-              className="transition-all duration-500 ease-in-out overflow-hidden"
-              style={{
-                maxHeight:
-                  openIndex === index
-                    ? `${contentRefs.current[index]?.scrollHeight}px`
-                    : "0",
-              }}
-            >
-              <p className="mx-9 mt-2 text-gray-600">{step.description}</p>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between">
+                  <b className="flex-grow text-left">{step.title}</b>
+                  <ChevronDownIcon
+                    className={`ms-5 w-6 h-6 text-teal-500 transform transition-transform duration-300 ${
+                      openIndex === index ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                <div
+                  ref={(el) => (contentRefs.current[index] = el)}
+                  className="transition-all duration-500 ease-in-out overflow-hidden"
+                  style={{
+                    maxHeight:
+                      openIndex === index
+                        ? `${contentRefs.current[index]?.scrollHeight}px`
+                        : "0",
+                  }}
+                >
+                  <p className="mt-2 text-gray-600">{step.description}</p>
+                </div>
+              </div>
             </div>
           </li>
         ))}

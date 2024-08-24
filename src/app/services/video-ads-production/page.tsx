@@ -49,8 +49,8 @@ export default function VideoAdsProduction() {
 
   const packages = [
     {
-      price: "400k IDR",
-      discount: "250k IDR",
+      price: "400k",
+      discount: "250k",
       benefit: [
         "30 - 60 Seconds",
         "No Actor Involvement",
@@ -61,8 +61,8 @@ export default function VideoAdsProduction() {
       ],
     },
     {
-      price: "750k IDR",
-      discount: "500k IDR",
+      price: "750k",
+      discount: "500k",
       benefit: [
         "30 - 60 Seconds",
         "Actor Involvement",
@@ -73,8 +73,8 @@ export default function VideoAdsProduction() {
       ],
     },
     {
-      price: "2 Million IDR",
-      discount: "1 Million IDR",
+      price: "2 Million",
+      discount: "1 Million",
       benefit: [
         "60 Seconds - 5 Minutes",
         "Actor Involvement",
@@ -89,8 +89,8 @@ export default function VideoAdsProduction() {
 
   const motionPackages = [
     {
-      price: "1 Million IDR",
-      discount: "800k IDR",
+      price: "1 Million",
+      discount: "800k",
       benefit: [
         "30 Seconds Duration",
         "Client-Provided Storyboard",
@@ -101,8 +101,8 @@ export default function VideoAdsProduction() {
       ],
     },
     {
-      price: "2 Million IDR",
-      discount: "1.2 Million IDR",
+      price: "2 Million",
+      discount: "1.2 Million",
       benefit: [
         "60 Seconds Duration",
         "Script/Storyboard Consultation",
@@ -113,8 +113,8 @@ export default function VideoAdsProduction() {
       ],
     },
     {
-      price: "4 Million IDR",
-      discount: "2.5 Million IDR",
+      price: "4 Million",
+      discount: "2.5 Million",
       benefit: [
         "60 Seconds - 2 Minutes Duration",
         "Script/Storyboard Consultation",
