@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
-            href="/"
+            href="/about"
           >
             About
           </Link>
@@ -101,13 +101,13 @@ const Navbar = () => {
           </div>
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
-            href="/"
+            href="/portfolio"
           >
             Portfolio
           </Link>
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
-            href="/"
+            href="/careers"
           >
             Careers
           </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
         <div className="hidden lg:flex hover:scale-110 transition-all">
           <Link
             className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-base"
-            href="/"
+            href="/contact-us"
           >
             Contact Us
           </Link>
@@ -150,7 +150,7 @@ const Navbar = () => {
             </Link>
             <Link
               className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+              href="/about"
             >
               About
             </Link>
@@ -162,19 +162,19 @@ const Navbar = () => {
             </Link>
             <Link
               className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+              href="/portfolio"
             >
               Portfolio
             </Link>
             <Link
               className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+              href="/careers"
             >
               Careers
             </Link>
             <Link
               className="bg-cont-primary text-white px-8 py-3 rounded-full font-bold text-base hover:scale-110 transition-all"
-              href="/"
+              href="/contact-us"
             >
               Contact Us
             </Link>
