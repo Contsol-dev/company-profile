@@ -8,6 +8,7 @@ export default function Form() {
     email: '',
     message: '',
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e: any) => {
     setFormData({
@@ -19,7 +20,7 @@ export default function Form() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
+    setIsLoading(true);
     const response = await fetch('/api/sendEmail', {
       method: 'POST',
       headers: {
@@ -29,7 +30,7 @@ export default function Form() {
     });
 
     if (response.ok) {
-      alert('Email sent successfully!');
+      setIsLoading(false);
     } else {
       alert('Failed to send email.');
     }
@@ -112,9 +113,9 @@ export default function Form() {
       </div>
       <button
           type="submit"
-          className="self-end px-4 py-2 bg-cont-secondary hover:bg-cont-primary hover:scale-105 hover:transition-all text-white font-bold capitalize rounded-full"
+          className="self-end w-36 py-2 bg-cont-secondary hover:bg-cont-primary hover:scale-105 hover:transition-all text-white font-bold capitalize rounded-full"
       >
-        Send
+        {isLoading ? 'Sending...' : 'Send'}
       </button>
     </form>
   );
