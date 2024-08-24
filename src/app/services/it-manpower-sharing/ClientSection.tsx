@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Gkd from "../../../assets/logo-gkd.jpg";
-import Dlhk from "../../../assets/logo-dlhk.png";
+import Gkd from "../../../assets/clients/logo-gkd.png";
+import Dlhk from "../../../assets/clients/logo-dlhk.png";
+import Seven from "../../../assets/clients/logo-seven.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -15,12 +16,13 @@ const ClientSection = () => {
       <div className="mt-8 w-full">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={5}
+          spaceBetween={20}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 0, // No delay between slides
             disableOnInteraction: false,
           }}
+          speed={5000} // Speed of transition between slides in milliseconds
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -45,7 +47,7 @@ const ClientSection = () => {
             <Image
               src={Gkd}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
+              className="h-[150px] w-auto object-contain mix-blend-screen"
             />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
@@ -58,15 +60,8 @@ const ClientSection = () => {
           {/* Duplicates for proper looping */}
           <SwiperSlide className="flex justify-center items-center">
             <Image
-              src={Gkd}
+              src={Seven}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center">
-            <Image
-              src={Dlhk}
-              alt="Dinas Lingkungan Hidup Yogyakarta Logo"
               className="h-[150px] w-auto object-contain"
             />
           </SwiperSlide>
@@ -74,7 +69,7 @@ const ClientSection = () => {
             <Image
               src={Gkd}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
+              className="h-[150px] w-auto object-contain mix-blend-screen"
             />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
@@ -87,15 +82,8 @@ const ClientSection = () => {
           {/* Duplicates for proper looping */}
           <SwiperSlide className="flex justify-center items-center">
             <Image
-              src={Gkd}
+              src={Seven}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center">
-            <Image
-              src={Dlhk}
-              alt="Dinas Lingkungan Hidup Yogyakarta Logo"
               className="h-[150px] w-auto object-contain"
             />
           </SwiperSlide>
@@ -103,7 +91,7 @@ const ClientSection = () => {
             <Image
               src={Gkd}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
+              className="h-[150px] w-auto object-contain mix-blend-screen"
             />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center">
@@ -116,15 +104,8 @@ const ClientSection = () => {
           {/* Duplicates for proper looping */}
           <SwiperSlide className="flex justify-center items-center">
             <Image
-              src={Gkd}
+              src={Seven}
               alt="Gemala Kempa Daya Logo"
-              className="h-[150px] w-auto object-contain"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center">
-            <Image
-              src={Dlhk}
-              alt="Dinas Lingkungan Hidup Yogyakarta Logo"
               className="h-[150px] w-auto object-contain"
             />
           </SwiperSlide>

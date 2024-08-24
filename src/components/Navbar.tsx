@@ -71,7 +71,7 @@ const Navbar = () => {
                     <ul className="list-none">
                       <li>
                         <Link
-                          href="#"
+                          href="/services/it-manpower-sharing"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           IT Manpower Sharing
@@ -79,7 +79,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/product-development"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Product Development
@@ -87,7 +87,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/services/website-development"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         >
                           Website Development
