@@ -1,15 +1,15 @@
 import { Typography } from "@material-tailwind/react";
 
 const services = [
-  { icon: "../../assets/logo.png", title: "IT Manpower Sharing" },
-  { icon: "../../assets/logo.png", title: "Product Development" },
-  { icon: "../../assets/logo.png", title: "Website Development" },
-  { icon: "../../assets/logo.png", title: "Mobile App Development" },
-  { icon: "../../assets/logo.png", title: "IoT Development" },
-  { icon: "../../assets/logo.png", title: "Data Analysis" },
-  { icon: "../../assets/logo.png", title: "Network Installation" },
-  { icon: "../../assets/logo.png", title: "AI Engineering" },
-  { icon: "../../assets/logo.png", title: "UI / UX Design" },
+  { icon: "@/assets/logo.png", title: "IT Manpower Sharing" },
+  { icon: "@/assets/logo.png", title: "Product Development" },
+  { icon: "@/assets/logo.png", title: "Website Development" },
+  { icon: "@/assets/logo.png", title: "Mobile App Development" },
+  { icon: "@/assets/logo.png", title: "IoT Development" },
+  { icon: "@/assets/logo.png", title: "Data Analysis" },
+  { icon: "@/assets/logo.png", title: "Network Installation" },
+  { icon: "@/assets/logo.png", title: "AI Engineering" },
+  { icon: "@/assets/logo.png", title: "UI / UX Design" },
 ];
 
 const ServicesSection = () => {

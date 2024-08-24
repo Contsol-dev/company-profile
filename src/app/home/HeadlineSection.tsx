@@ -1,4 +1,4 @@
-import video from "../../assets/headline_video.mp4";
+import video from "@/assets/headline_video.mp4";
 
 const HeadlineSection = () => {
   return (
