@@ -30,7 +30,7 @@ const FaqSection = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <section className="py-12 bg-blue-900">
+    <section className="py-12 bg-cont-primary">
       <div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-3xl font-bold text-center text-white mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
