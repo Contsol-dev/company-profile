@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "@/assets/logo.png";
+import logoWhite from "@/assets/ic_logo_white.png";
 import mapImage from "../assets/map.png";
 import Image from "next/image";
 
@@ -8,11 +8,14 @@ const FooterSection = () => {
   return (
     <footer className="bg-cont-primary py-12 text-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-start mb-8">
-          <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-8">
-            <Image src={logo} alt="Logo" className="mb-2" width={100} height={50} />
+      <div className="flex flex-col md:flex-row items-center mb-8">
+      <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+          <Image src={logoWhite} alt="Logo" className="mb-2" width={100} height={50} />
+        </div>
+          <div className="flex flex-col">
+            <h3 className="font-bold text-4xl leading-none">CONT</h3>
+            <h3 className="font-bold text-4xl leading-none">SOLUTIONS</h3>
           </div>
-            <h3 className="font-bold text-lg">CONT SOLUTIONS</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -64,7 +67,8 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 text-center text-sm">
+      <hr className="mx-12 my-4 border-t-2 border-white opacity-50" />
+      <div className="mt-4 text-center text-sm">
         <p>© COPYRIGHT 2024. ALL RIGHTS RESERVED BY CONT SOLUTIONS</p>
       </div>
     </footer>
