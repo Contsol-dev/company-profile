@@ -28,7 +28,7 @@ export default function WhyCard({ main, explanation }: WhyCardProps) {
         </div>
         <div className="absolute w-full h-full rotate-y-180 backface-hidden">
           <div className="w-full h-full bg-cont-primary flex flex-col overflow-hidden justify-start items-center p-8">
-            <p className="text-justify text-white">{explanation}</p>
+            <p className="text-white">{explanation}</p>
           </div>
         </div>
       </div>

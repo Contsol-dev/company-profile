@@ -14,7 +14,7 @@ export default function Headline() {
         <h2 className="relative z-10 text-black font-bold uppercase text-4xl">
           Hello, we are <span className="text-cont-primary">Cont Solutions Indonesia</span>, your digital problem-solving solution.
         </h2>
-        <p className="relative z-10 text-cont-secondary text-lg">
+        <p className="relative z-10 text-cont-primary font-semibold text-lg">
           Cont Solution was established in 2023. 
           Initially, we focused on providing task assistance related to computer science, 
           developing systems for Student Creativity Programs (PKM), 

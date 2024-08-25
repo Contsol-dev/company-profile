@@ -8,7 +8,7 @@ export default function Team() {
       <h2 className="relative z-10 text-black font-bold uppercase text-4xl">
         We Work With Team
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8">
         <TeamCard 
           memberName="Muhammad Iqbal G." 
           memberSpecialist="Software engineer & IoT Engineer" 
