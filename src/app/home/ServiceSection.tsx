@@ -1,18 +1,26 @@
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
+import iconCPU from "@/assets/icons/ic_cpu.png";
+import iconMobile from "@/assets/icons/ic_mobile_app.png";
+import iconTraining from "@/assets/icons/ic_it_training.png";
+import iconNetwork from "@/assets/icons/ic_router.png";
+import iconWebsite from "@/assets/icons/ic_website.png";
+import iconAI from "@/assets/icons/ic_artificial_intelligence.png";
+import iconLaptop from "@/assets/icons/ic_laptop.png";
+import iconService from "@/assets/icons/ic_service.png";
+import iconDesign from "@/assets/icons/ic_design.png";
 
 const services = [
-  { icon: "@/assets/icons/ic_artificial_intelligence.svg", title: "IT Manpower Sharing" },
-  { icon: "@/assets/icons/ic_cpu.svg", title: "Product Development" },
-  { icon: "@/assets/icons/ic_website.svg", title: "Website Development" },
-  { icon: "@/assets/icons/ic_mobile_app.svg", title: "Mobile App Development" },
-  { icon: "@/assets/icons/ic_it_training.svg", title: "IoT Development" },
-  { icon: "@/assets/icons/ic_service.svg", title: "Data Analysis" },
-  { icon: "@/assets/icons/ic_router.svg", title: "Network Installation" },
-  { icon: "@/assets/icons/ic_artificial_intelligence.svg", title: "AI Engineering" },
-  { icon: "@/assets/icons/ic_laptop.svg", title: "UI / UX Design" },
+  { icon: iconTraining, title: "IT Manpower Sharing" },
+  { icon: iconLaptop, title: "Product Development" },
+  { icon: iconWebsite, title: "Website Development" },
+  { icon: iconMobile, title: "Mobile App Development" },
+  { icon: iconService, title: "IoT Development" },
+  { icon: iconCPU, title: "Data Analysis" },
+  { icon: iconNetwork, title: "Network Installation" },
+  { icon: iconAI, title: "AI Engineering" },
+  { icon: iconDesign, title: "UI / UX Design" },
 ];
-
 
 const ServicesSection = () => {
   return (
@@ -21,17 +29,19 @@ const ServicesSection = () => {
         <Typography variant="h4" className="mb-8 text-center text-white">
           Butuh menyelesaikan yang ada di bawah ini?
         </Typography>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center justify-center">
               <Image
                 src={service.icon}
                 alt={service.title}
-                width={100}
-                height={100}
-                className="w-16 h-16 mb-4"
+                width={80}
+                height={80}
+                className="mb-4"
               />
-              <Typography className="text-white">{service.title}</Typography>
+              <Typography className="text-white text-center font-semibold">
+                {service.title}
+              </Typography>
             </div>
           ))}
         </div>

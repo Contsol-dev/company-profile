@@ -44,7 +44,7 @@ const FaqSection = () => {
                   {faq.answer}
                 </AccordionBody>
               </Accordion>
-              {index < faqData.length - 1 && <hr className="my-4 border-t-2 border-white opacity-50" />}
+              {index < faqData.length - 1}
             </div>
           ))}
         </div>
