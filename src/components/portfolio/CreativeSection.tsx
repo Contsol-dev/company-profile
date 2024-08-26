@@ -101,13 +101,13 @@ const CreativeSection = () => {
 
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-cont-primary p-2 rounded-full shadow-md focus:outline-none"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 text-cont-primary p-2 bg-transparent focus:outline-none"
           >
             &lt;
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-cont-primary p-2 rounded-full shadow-md focus:outline-none"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 text-cont-primary p-2 bg-transparent focus:outline-none"
           >
             &gt;
           </button>
