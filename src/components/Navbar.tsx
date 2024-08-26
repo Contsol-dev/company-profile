@@ -19,6 +19,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full h-fit shadow-xl bg-white z-50">
       <div className="flex justify-between items-center w-full px-4 py-4 2xl:px-16">
+        {/* Logo */}
         <div className="flex flex-row gap-3 items-center ml-4">
           <Image
             src={logo}
@@ -35,6 +36,8 @@ const Navbar = () => {
             </span>
           </div>
         </div>
+
+        {/* Menu Links */}
         <div className="hidden lg:flex gap-10 text-lg text-cont-primary">
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
@@ -44,7 +47,7 @@ const Navbar = () => {
           </Link>
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
-            href="/"
+            href="/about"
           >
             About
           </Link>
@@ -53,7 +56,7 @@ const Navbar = () => {
               className="font-bold hover:text-cont-secondary flex flex-row items-center transition-all"
               onClick={toggleDropdown}
             >
-              Service
+              Services
               <GoTriangleDown
                 className={`ml-2 transition-transform ${
                   isDropdownOpen ? "rotate-180" : ""
@@ -61,41 +64,103 @@ const Navbar = () => {
               />
             </button>
             {isDropdownOpen && (
-              <div className="absolute left-0 top-full w-full lg:w-auto lg:max-w-4xl bg-transparent lg:bg-white lg:flex lg:flex-row p-6 lg:p-0 border lg:border-none shadow-lg lg:shadow-none transition-opacity opacity-0 lg:opacity-100">
-                <ul className="flex flex-col lg:flex-row gap-6 list-none m-0 p-0 lg:gap-8 lg:p-6">
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Web Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/it-manpower-sharing"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      IT Manpower Sharing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      Mobile Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >
-                      UI/UX Design
-                    </Link>
-                  </li>
-                </ul>
+              <div className="absolute left-0 top-full w-[300px] lg:w-[600px] bg-white p-6 border shadow-lg z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="font-bold text-cont-primary mb-2">
+                      DEVELOPMENT
+                    </h3>
+                    <ul className="list-none">
+                      <li>
+                        <Link
+                          href="/services/it-manpower-sharing"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          IT Manpower Sharing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/product-development"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Product Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/website-development"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Website Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/application-development"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Application Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/mobile-app-development"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Mobile App Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/iot-development"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          IoT Development
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-cont-primary mb-2">
+                      CREATIVE
+                    </h3>
+                    <ul className="list-none">
+                      <li>
+                        <Link
+                          href="/services/logo-design"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Logo Design
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/social-media-management"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Social Media Management
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/photo-product"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Photo Product
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services/video-ads-production"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        >
+                          Video Ads Production
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             )}
           </div>
@@ -107,19 +172,23 @@ const Navbar = () => {
           </Link>
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
-            href="/"
+            href="/careers"
           >
             Careers
           </Link>
         </div>
+
+        {/* Contact Us Button */}
         <div className="hidden lg:flex hover:scale-110 transition-all">
           <Link
             className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-base"
-            href="/"
+            href="/contact-us"
           >
             Contact Us
           </Link>
         </div>
+
+        {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center">
           <button onClick={toggleMenu} className="focus:outline-none">
             <svg
@@ -139,42 +208,77 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-white shadow-l py-4">
-          <div className="">
+          <div className="flex flex-col gap-4 px-4">
             <Link
-              className="text-base hover:text-cont-secondary transition-all"
+              className="text-base font-bold hover:text-cont-secondary transition-all"
               href="/"
             >
               Home
             </Link>
             <Link
-              className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+              className="text-base font-bold hover:text-cont-secondary transition-all"
+              href="/about"
             >
               About
             </Link>
-            <Link
-              className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+            <button
+              className="text-base font-bold hover:text-cont-secondary transition-all"
+              onClick={toggleDropdown}
             >
-              Service
-            </Link>
+              Services
+              <GoTriangleDown
+                className={`ml-2 transition-transform ${
+                  isDropdownOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {isDropdownOpen && (
+              <div className="flex flex-col px-4">
+                <Link
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Web Development
+                </Link>
+                <Link
+                  href="/services/it-manpower-sharing"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  IT Manpower Sharing
+                </Link>
+                <Link
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Mobile Development
+                </Link>
+                <Link
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  UI/UX Design
+                </Link>
+              </div>
+            )}
             <Link
-              className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+              className="text-base font-bold hover:text-cont-secondary transition-all"
+              href="/portfolio"
             >
               Portfolio
             </Link>
             <Link
-              className="text-base hover:text-cont-secondary transition-all"
-              href="/"
+              className="text-base font-bold hover:text-cont-secondary transition-all"
+              href="/careers"
             >
               Careers
             </Link>
             <Link
-              className="bg-cont-primary text-white px-8 py-3 rounded-full font-bold text-base hover:scale-110 transition-all"
-              href="/"
+              className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-base hover:scale-110 transition-all"
+              href="/contact-us"
             >
               Contact Us
             </Link>
