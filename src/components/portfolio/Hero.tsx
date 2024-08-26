@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import backgroundImage from '../../assets/bg-overlay.png';
+import backgroundImage from '../../assets/contsol-members.jpeg';
 
 const Hero = () => {
     const { ref, inView } = useInView({
@@ -11,7 +11,7 @@ const Hero = () => {
     });
 
     return (
-        <div ref={ref} className="relative h-[75vh] flex items-center justify-center">
+        <div ref={ref} className="relative h-[50vh] flex items-center justify-center">
             <AnimatePresence>
                 {inView && (
                     <motion.div
@@ -39,10 +39,10 @@ const Hero = () => {
                 transition={{ duration: 0.6 }}
             >
                 <div className="text-white">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold">
                         ABOUT US
                     </h1>
-                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl mt-2 md:mt-4">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-lg mt-2 md:mt-4">
                         Hello, we are Cont Solution Development, your digital problem-solving solution.
                     </p>
                 </div>

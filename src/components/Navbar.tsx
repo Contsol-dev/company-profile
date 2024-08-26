@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
           <Link
             className="font-bold hover:text-cont-secondary transition-all"
-            href="/"
+            href="/portfolio"
           >
             Portfolio
           </Link>
