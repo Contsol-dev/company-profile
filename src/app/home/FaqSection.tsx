@@ -1,9 +1,7 @@
-import React from "react";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
+import React, { useState } from "react";
+import Image from "next/image";
+import iconUp from "@/assets/icons/ic_arrow_up.png";
+import iconDown from "@/assets/icons/ic_arrow_down.png";
 
 const faqData = [
   {
@@ -25,9 +23,11 @@ const faqData = [
 ];
 
 const FaqSection = () => {
-  const [open, setOpen] = React.useState(1);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <section className="py-12 bg-cont-primary">
@@ -35,16 +35,26 @@ const FaqSection = () => {
         <h2 className="text-3xl font-bold text-center text-white mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqData.map((faq, index) => (
-            <div key={index}>
-              <Accordion open={open === index + 1}>
-                <AccordionHeader className="text-white" onClick={() => handleOpen(index + 1)}>
-                  {faq.question}
-                </AccordionHeader>
-                <AccordionBody className="text-white">
+            <div key={index} className="border-b border-gray-200">
+              <button
+                className="w-full flex items-center justify-between text-left text-white font-semibold py-4 focus:outline-none"
+                onClick={() => handleToggle(index)}
+              >
+                {faq.question}
+                <span>
+                  <Image
+                    src={openIndex === index ? iconUp : iconDown}
+                    alt={openIndex === index ? "Icon Up" : "Icon Down"}
+                    width={20} // Adjust the size as needed
+                    height={20}
+                  />
+                </span>
+              </button>
+              {openIndex === index && (
+                <div className="text-white py-2">
                   {faq.answer}
-                </AccordionBody>
-              </Accordion>
-              {index < faqData.length - 1}
+                </div>
+              )}
             </div>
           ))}
         </div>
