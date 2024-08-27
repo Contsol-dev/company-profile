@@ -3,10 +3,10 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const HireSection = () => {
   // State to manage which accordion is open
-  const [openIndex, setOpenIndex] = useState(null);
-  const contentRefs = useRef([]);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -76,7 +76,9 @@ const HireSection = () => {
                   />
                 </div>
                 <div
-                  ref={(el) => (contentRefs.current[index] = el)}
+                  ref={(el) => {
+                    contentRefs.current[index] = el;
+                  }}
                   className="transition-all duration-500 ease-in-out overflow-hidden"
                   style={{
                     maxHeight:
