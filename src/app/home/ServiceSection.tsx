@@ -1,4 +1,4 @@
-import { Typography } from "@material-tailwind/react";
+import React from "react";
 import Image from "next/image";
 import iconCPU from "@/assets/icons/ic_cpu.png";
 import iconMobile from "@/assets/icons/ic_mobile_app.png";
@@ -26,9 +26,9 @@ const ServicesSection = () => {
   return (
     <section className="py-12 bg-cont-primary text-white">
       <div className="container mx-auto px-4">
-        <Typography variant="h4" className="mb-8 text-center text-white">
+        <h4 className="mb-8 text-center text-white text-3xl font-bold">
           Butuh menyelesaikan yang ada di bawah ini?
-        </Typography>
+        </h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col items-center justify-center">
@@ -39,9 +39,9 @@ const ServicesSection = () => {
                 height={80}
                 className="mb-4"
               />
-              <Typography className="text-white text-center font-semibold">
+              <p className="text-white text-center font-semibold">
                 {service.title}
-              </Typography>
+              </p>
             </div>
           ))}
         </div>
