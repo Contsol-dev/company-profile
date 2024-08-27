@@ -22,8 +22,8 @@ const HeadlineSection = () => {
         <h2 className="text-7xl font-semibold text-white text-center">
           Innovative Solutions
         </h2>
-        <button className="mt-8 px-6 py-3 bg-cont-primary text-white text-lg font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
-          LET'S GO!!!!
+        <button className="mt-8 px-6 py-3 bg-cont-primary text-white text-lg font-semibold rounded-full shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
+          LET&apos;S GO!!!!
         </button>
       </div>
     </div>
