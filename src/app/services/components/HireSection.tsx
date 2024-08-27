@@ -13,7 +13,7 @@ interface AccordionData {
 const HireSection = ({ accordionData }: HireSectionProps) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
+  const handleToggle = (index:any) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
