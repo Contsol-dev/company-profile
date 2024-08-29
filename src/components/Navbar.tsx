@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import logo from "../assets/logo.png";
 import Link from "next/link";
 import { GoTriangleDown } from "react-icons/go";
@@ -7,6 +7,7 @@ import { GoTriangleDown } from "react-icons/go";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,25 +17,45 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav className="fixed w-full h-fit shadow-xl bg-white z-50">
       <div className="flex justify-between items-center w-full px-4 py-4 2xl:px-16">
         {/* Logo */}
         <div className="flex flex-row gap-3 items-center ml-4">
-          <Image
-            src={logo}
-            alt="Logo"
-            width="45"
-            height="45"
-            className="cursor-pointer"
-            priority
-          />
-          <div className="text-cont-primary ltr font-[ITC Avant Garde] ml-0 leading-[0.88882623] text-lg normal-case tracking-[-0.02em]">
-            <span className="text-cont-primary font-bold text-lgg">Cont</span>
-            <span className="text-cont-primary font-normal text-lgg">
-              Solutions
-            </span>
-          </div>
+          <button>
+            <Image
+              src={logo}
+              alt="Logo"
+              width="45"
+              height="45"
+              className="cursor-pointer"
+              priority
+            />
+          </button>
+          <button>
+            <div className="text-cont-primary ltr font-[ITC Avant Garde] ml-0 leading-[0.88882623] text-lg normal-case tracking-[-0.02em]">
+              <span className="text-cont-primary font-bold text-lgg">Cont</span>
+              <span className="text-cont-primary font-normal text-lgg">
+                Solutions
+              </span>
+            </div>
+          </button>
         </div>
 
         {/* Menu Links */}
@@ -51,7 +72,7 @@ const Navbar = () => {
           >
             About
           </Link>
-          <div className="relative">
+          <div className="relative" ref={dropdownRef}>
             <button
               className="font-bold hover:text-cont-secondary flex flex-row items-center transition-all"
               onClick={toggleDropdown}
@@ -64,17 +85,17 @@ const Navbar = () => {
               />
             </button>
             {isDropdownOpen && (
-              <div className="absolute left-0 top-full w-[300px] lg:w-[600px] bg-white p-6 border shadow-lg z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="absolute left-0 top-full w-[300px] lg:w-[600px] rounded-lg bg-white p-6 border shadow-lg z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                   <div>
                     <h3 className="font-bold text-cont-primary mb-2">
                       DEVELOPMENT
                     </h3>
-                    <ul className="list-none">
+                    <ul className="list-none space-y-2">
                       <li>
                         <Link
                           href="/services/it-manpower-sharing"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           IT Manpower Sharing
                         </Link>
@@ -82,7 +103,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/product-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Product Development
                         </Link>
@@ -90,7 +111,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/website-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Website Development
                         </Link>
@@ -98,7 +119,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/application-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Application Development
                         </Link>
@@ -106,17 +127,53 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/mobile-app-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Mobile App Development
                         </Link>
                       </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul className="list-none space-y-2">
                       <li>
                         <Link
                           href="/services/iot-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           IoT Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href=""
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                        >
+                          Data Analysis
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href=""
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                        >
+                          Network Installation
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href=""
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                        >
+                          AI Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href=""
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                        >
+                          UI / UX Design
                         </Link>
                       </li>
                     </ul>
@@ -125,11 +182,11 @@ const Navbar = () => {
                     <h3 className="font-bold text-cont-primary mb-2">
                       CREATIVE
                     </h3>
-                    <ul className="list-none">
+                    <ul className="list-none space-y-2">
                       <li>
                         <Link
                           href="/services/logo-design"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Logo Design
                         </Link>
@@ -137,7 +194,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/social-media-management"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Social Media Management
                         </Link>
@@ -145,7 +202,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/photo-product"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Photo Product
                         </Link>
@@ -153,7 +210,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/services/video-ads-production"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Video Ads Production
                         </Link>
@@ -181,7 +238,7 @@ const Navbar = () => {
         {/* Contact Us Button */}
         <div className="hidden lg:flex hover:scale-110 transition-all">
           <Link
-            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-base"
+            className="bg-cont-primary text-white px-6 py-3 rounded-lg font-bold text-cont-primary"
             href="/contact-us"
           >
             Contact Us
@@ -214,19 +271,19 @@ const Navbar = () => {
         <div className="lg:hidden bg-white shadow-l py-4">
           <div className="flex flex-col gap-4 px-4">
             <Link
-              className="text-base font-bold hover:text-cont-secondary transition-all"
+              className="text-cont-primary font-bold hover:text-cont-secondary transition-all"
               href="/"
             >
               Home
             </Link>
             <Link
-              className="text-base font-bold hover:text-cont-secondary transition-all"
+              className="text-cont-primary font-bold hover:text-cont-secondary transition-all"
               href="/about"
             >
               About
             </Link>
             <button
-              className="text-base font-bold hover:text-cont-secondary transition-all"
+              className="text-cont-primary font-bold hover:text-cont-secondary transition-all flex items-center"
               onClick={toggleDropdown}
             >
               Services
@@ -237,47 +294,65 @@ const Navbar = () => {
               />
             </button>
             {isDropdownOpen && (
-              <div className="flex flex-col px-4">
-                <Link
-                  href="#"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Web Development
-                </Link>
-                <Link
-                  href="/services/it-manpower-sharing"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  IT Manpower Sharing
-                </Link>
-                <Link
-                  href="#"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Mobile Development
-                </Link>
-                <Link
-                  href="#"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  UI/UX Design
-                </Link>
+              <div className="bg-white border rounded-lg mt-2 p-4">
+                <ul className="list-none space-y-2">
+                  <li>
+                    <Link
+                      href="/services/it-manpower-sharing"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                    >
+                      IT Manpower Sharing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/product-development"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                    >
+                      Product Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/website-development"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                    >
+                      Website Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/application-development"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                    >
+                      Application Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/mobile-app-development"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                    >
+                      Mobile App Development
+                    </Link>
+                  </li>
+                </ul>
               </div>
             )}
             <Link
-              className="text-base font-bold hover:text-cont-secondary transition-all"
+              className="text-cont-primary font-bold hover:text-cont-secondary transition-all"
               href="/portfolio"
             >
               Portfolio
             </Link>
             <Link
-              className="text-base font-bold hover:text-cont-secondary transition-all"
+              className="text-cont-primary font-bold hover:text-cont-secondary transition-all"
               href="/careers"
             >
               Careers
             </Link>
             <Link
-              className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold text-base hover:scale-110 transition-all"
+              className="text-cont-primary font-bold hover:text-cont-secondary transition-all"
               href="/contact-us"
             >
               Contact Us

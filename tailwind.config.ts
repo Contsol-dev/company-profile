@@ -25,5 +25,8 @@ const config: Config = {
     },
   },
   plugins: [],
+  corePlugins: {
+    filter: true
+  },
 };
 export default config;
