@@ -7,7 +7,7 @@ import FooterSection from "@/components/FooterSection"
 
 export default function Contact() {
   return(
-    <div className="bg-slate-50 w-screen overflow-x-hidden">
+    <div className="bg-slate-50 overflow-x-hidden">
       <Navbar />
       <Hero />
       <Form />

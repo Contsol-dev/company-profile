@@ -10,9 +10,9 @@ export default function Hero() {
         bg-[url('../assets/contsol-members.jpeg')] bg-cover bg-center
         text-white
         ">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <h1 className="relative font-extrabold text-4xl lg:text-5xl mb-5">Careers</h1>
-        <h2 className='relative text-base lg:text-lg'>Join Us, Learn and Grow Together!</h2>
+        <div className="absolute inset-0 bg-black opacity-85"></div>
+        <h1 className="relative font-extrabold mx-auto text-4xl lg:text-5xl mb-5">Careers <span className='text-cont-secondary'>Form</span></h1>
+        <h2 className='relative text-base mx-auto lg:text-lg'><span className='text-cont-secondary'>Join Us</span>, Learn and Grow Together!</h2>
       </div>
     </>
   )

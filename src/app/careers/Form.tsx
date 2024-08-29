@@ -68,6 +68,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.fullname}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -83,6 +84,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.date_of_birth}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -140,6 +142,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.address}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -156,6 +159,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.email}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -172,6 +176,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.phone}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -181,7 +186,7 @@ export default function Form() {
         >
           Area of Expertise
         </label>
-        <select name="expertise" id="expertise" className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none">
+        <select required name="expertise" id="expertise" className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none">
           <option value="Product Development">Product Development</option>
           <option value="Project Manager">Project Manager</option>
           <option value="Frontend Developer">Frontend Developer</option>
@@ -212,6 +217,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.experience}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -228,6 +234,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.languages}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -260,6 +267,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.linkedin}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -276,6 +284,7 @@ export default function Form() {
             className="text-gray-900 py-1 px-2 border border-gray-400 rounded-lg focus:stroke-none"
             onChange={handleChange}
             value={formData.portfolio}
+            required
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -297,7 +306,7 @@ export default function Form() {
       <div className="flex flex-row-reverse justify-between">
         <button
             type="submit"
-            className="self-end w-36 py-2 bg-cont-secondary hover:bg-cont-primary hover:scale-105 hover:transition-all text-white font-bold capitalize rounded-full"
+            className="self-end w-36 py-2 bg-cont-secondary hover:bg-cont-primary hover:scale-105 hover:transition-all text-white font-bold capitalize rounded-lg"
             >
           {isLoading ? 'Sending...' : 'Send'}
         </button>
