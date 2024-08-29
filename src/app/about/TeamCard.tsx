@@ -9,9 +9,9 @@ interface TeamCardProps {
 export default function TeamCard({ memberPhoto, memberName, memberSpecialist }: TeamCardProps) {
   return (
     <div className="
-      flex flex-col items-center text-center bg-cont-primary shadow-md
+      flex flex-col items-center text-center bg-cont-primary shadow-md rounded-lg
     ">
-      <div className='overflow-hidden w-full flex items-center h-40 lg:h-96'>
+      <div className='overflow-hidden w-full flex items-center h-32 lg:h-96'>
         <Image 
           src={memberPhoto} 
           alt={memberName} 
