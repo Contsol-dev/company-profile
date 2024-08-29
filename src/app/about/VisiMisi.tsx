@@ -6,7 +6,7 @@ import Logo from '@/assets/logo.png';
 
 export default function VisiMisi() {
   return(
-    <div className="relative p-4 lg:p-16 flex flex-col items-start justify-center lg:flex-row mb-12 gap-40 bg-cont-primary ">
+    <div className="relative p-4 py-16 lg:p-16 flex flex-col items-start justify-center lg:flex-row mb-12 lg:gap-40 bg-cont-primary ">
       <Image 
         src={Logo}
         alt="Logo Contsol"
@@ -27,7 +27,7 @@ export default function VisiMisi() {
             Vision
           </h2>
         </div>
-        <div className="mb-4 rounded-lg px-16 flex flex-col">
+        <div className="mb-4 rounded-lg px-4 md:px-16 flex flex-col">
           <span className="text-cont-secondary text-5xl">&quot;</span>
           <p className="font-semibold text-cont-primary text-center text-2xl">To help solve problems through creative, innovative, and effective digital technology transformation.</p>
           <span className="text-cont-secondary text-5xl self-end">&quot;</span>

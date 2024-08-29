@@ -9,7 +9,7 @@ interface TeamCardProps {
 export default function TeamCard({ memberPhoto, memberName, memberSpecialist }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center text-center rounded-lg">
-      <div className="relative w-48 h-48">
+      <div className="relative w-32 h-32 md:w-48 md:h-48">
         <Image
           src={memberPhoto}
           alt={`${memberName}'s photo`}

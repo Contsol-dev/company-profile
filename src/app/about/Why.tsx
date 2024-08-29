@@ -2,8 +2,8 @@ import WhyCard from "./WhyCard";
 export default function Why() {
   return(
     <div className="p-4 lg:px-16 lg:py-12 w-screen flex flex-col lg:items-center mb-12 gap-4">
-      <h3 className="relative z-10 text-cont-primary font-black uppercase lg:text-center">Why Us</h3>
-      <h2 className="relative z-10 text-black font-bold uppercase text-4xl mb-4 lg:text-center">
+      <h3 className="relative z-10 text-cont-primary font-black uppercase text-center">Why Us</h3>
+      <h2 className="relative z-10 text-black font-bold uppercase text-4xl mb-4 text-center">
         Why Choose <span className="text-cont-secondary">Cont Solutions</span>?
       </h2>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
