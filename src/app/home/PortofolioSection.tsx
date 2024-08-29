@@ -28,12 +28,12 @@ const PortofolioSection = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h1 className="mb-8 text-6xl text-center text-cont-primary">
+        <h1 className="mb-8 text-4xl md:text-5xl lg:text-6xl text-center text-cont-primary">
           Berikut adalah portofolio kami
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden mt-6 w-full">
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="relative h-56">
                 <img
                   src={card.image}
@@ -42,13 +42,15 @@ const PortofolioSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h5 className="text-2xl font-semibold text-blue-gray-800 mb-2">
+                <h5 className="text-xl md:text-2xl font-semibold text-blue-gray-800 mb-2">
                   {card.title}
                 </h5>
-                <p className="text-black">{card.description}</p>
+                <p className="text-gray-700 text-sm md:text-base">
+                  {card.description}
+                </p>
               </div>
               <div className="p-6 pt-0">
-                <button className="inline-block bg-cont-primary text-white px-6 py-3 rounded-lg shadow-lg font-semibold transition duration-300 ease-in-out hover:bg-cont-secondary">
+                <button className="inline-block bg-cont-primary text-white px-4 md:px-6 py-2 md:py-3 rounded-lg shadow-lg font-semibold transition duration-300 ease-in-out hover:bg-cont-secondary">
                   Read More
                 </button>
               </div>
@@ -56,7 +58,7 @@ const PortofolioSection = () => {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="inline-block bg-cont-primary text-white px-6 py-3 rounded-lg shadow-lg font-semibold transition duration-300 ease-in-out hover:bg-cont-secondary">
+          <button className="inline-block bg-cont-primary text-white px-4 md:px-6 py-2 md:py-3 rounded-lg shadow-lg font-semibold transition duration-300 ease-in-out hover:bg-cont-secondary">
             Tampilkan Lebih Banyak
           </button>
         </div>

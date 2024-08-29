@@ -30,6 +30,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .filter-white {
+    filter: brightness(0) invert(1);
+  }
+  .hover\:filter-none:hover {
+    filter: none;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");

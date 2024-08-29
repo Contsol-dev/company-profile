@@ -7,6 +7,7 @@ import Image from "next/image";
 import ServicesSection from "@/app/home/ServiceSection";
 import FaqSection from "@/app/home/FaqSection";
 import FooterSection from "@/components/FooterSection";
+import TestimonialsSection from "./home/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSection/>
       <ServicesSection/>
       <PortofolioSection/>
+      <TestimonialsSection/>
       <FaqSection/>
       <FooterSection/>
     </div>

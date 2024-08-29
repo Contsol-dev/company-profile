@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import iconUp from "@/assets/icons/ic_arrow_up.png";
-import iconDown from "@/assets/icons/ic_arrow_down.png";
+import iconUp from "@/assets/icons/ic_arrow_up_primary.png";
+import iconDown from "@/assets/icons/ic_arrow_down_primary.png";
 
 const faqData = [
   {
@@ -30,28 +30,28 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-12 bg-cont-primary">
+    <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl font-bold text-center text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-center text-cont-primary mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqData.map((faq, index) => (
-            <div key={index} className="border-b border-gray-200">
+            <div key={index} className="border-b border-cont-primary">
               <button
-                className="w-full flex items-center justify-between text-left text-white font-semibold py-4 focus:outline-none"
+                className="w-full flex items-center justify-between text-left text-cont-primary font-semibold py-4 focus:outline-none"
                 onClick={() => handleToggle(index)}
               >
                 {faq.question}
-                <span>
+                <span className="ml-2 flex-shrink-0">
                   <Image
                     src={openIndex === index ? iconUp : iconDown}
                     alt={openIndex === index ? "Icon Up" : "Icon Down"}
-                    width={20} // Adjust the size as needed
+                    width={20}
                     height={20}
                   />
                 </span>
               </button>
               {openIndex === index && (
-                <div className="text-white py-2">
+                <div className="text-cont-primary py-2 text-sm md:text-base">
                   {faq.answer}
                 </div>
               )}
