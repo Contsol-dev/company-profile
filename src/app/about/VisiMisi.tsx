@@ -1,38 +1,64 @@
+import Image from "next/image";
+import ArrowTargetSvg from "@/assets/svgs/ArrowTarget";
+import BowSvg from "@/assets/svgs/Bow";
+import MisiPoint from "./MisiPoint";
+import Logo from '@/assets/logo.png';
+
 export default function VisiMisi() {
   return(
-    <div className=" p-4 lg:px-16 lg:py-12 w-screen flex flex-col lg:flex-row mb-12 gap-4">
-      <div className="w-full lg:w-1/3">
-        <h2 className="text-black font-bold uppercase text-4xl">
-          Vision
-        </h2>
-        <h3 className="z-10 text-cont-secondary font-black uppercase text-2xl">&</h3>
-        <h2 className="text-black font-bold uppercase text-4xl">
-          Mission
-        </h2>
-      </div>
-      <div className="w-full lg:w-1/3 flex flex-col gap-4">
-        <div className="mb-4">
-          <h3 className="relative z-10 text-cont-secondary font-black uppercase">Vision</h3>
-          <p className="font-semibold text-black text-2xl">&quot;To help solve problems through creative, innovative, and effective digital technology transformation.&quot;</p>
+    <div className="relative p-4 lg:p-16 flex flex-col items-start justify-center lg:flex-row mb-12 gap-40 bg-cont-primary ">
+      <Image 
+        src={Logo}
+        alt="Logo Contsol"
+        className="
+          w-40 h-auto -rotate-12
+          absolute right-2 -bottom-20
+        "
+      />
+      <div 
+        className="
+          w-full lg:w-1/3 flex flex-col gap-8 h-full relative overflow-hidden bg-white
+          mb-4 rounded-lg p-4 pl-6 pt-6 border-cont-secondary shadow-md shadow-gray-800
+        "
+      >
+        <ArrowTargetSvg fillColor="#12335a" className="opacity-15 w-56 h-auto absolute -right-12 -bottom-20" />
+        <div className="flex justify-center relative">
+          <h2 className="text-cont-secondary justify-self-center font-bold uppercase text-center text-4xl z-10">
+            Vision
+          </h2>
         </div>
-        <div>
-          <h3 className="relative z-10 text-cont-secondary font-black uppercase">Mission</h3>
-          <div className="relative flex gap-2">
-            <div className="absolute w-2 h-2 top-2 bg-cont-secondary rounded-full"></div>
-            <p className="ml-4 font-semibold text-black text-xl">Providing Consultation Services for Problem Solving</p>
-          </div>
-          <div className="relative flex gap-2">
-            <div className="absolute w-2 h-2 top-2 bg-cont-secondary rounded-full"></div>
-            <p className="ml-4 font-semibold text-black text-xl">Empowering Productivity</p>
-          </div>
-          <div className="relative flex gap-2">
-            <div className="absolute w-2 h-2 top-2 bg-cont-secondary rounded-full"></div>
-            <p className="ml-4 font-semibold text-black text-xl">Optimizing Operations</p>
-          </div>
-          <div className="relative flex gap-2">
-            <div className="absolute w-2 h-2 top-2 bg-cont-secondary rounded-full"></div>
-            <p className="ml-4 font-semibold text-black text-xl">Offering Affordable and Sustainable Services</p>
-          </div>
+        <div className="mb-4 rounded-lg px-16 flex flex-col">
+          <span className="text-cont-secondary text-5xl">&quot;</span>
+          <p className="font-semibold text-cont-primary text-center text-2xl">To help solve problems through creative, innovative, and effective digital technology transformation.</p>
+          <span className="text-cont-secondary text-5xl self-end">&quot;</span>
+        </div>
+      </div>
+      <div 
+        className="
+          w-full lg:w-1/3 flex flex-col gap-8 h-full relative overflow-hidden bg-white
+          mb-4 rounded-lg py-4 px-12 pt-6 pb-16
+          border-cont-secondary shadow-md shadow-gray-800
+        "
+      >
+        <BowSvg fillColor="#12335a" className="opacity-15 w-44 h-auto absolute -right-6 -bottom-6" />
+        <div className="flex justify-center gap-4">
+          <h2 className="text-cont-secondary font-bold uppercase text-center text-4xl z-10">
+            Mission
+          </h2>
+        </div>
+        <div className="flex flex-col gap-2">
+          <MisiPoint 
+            misi="Providing Consultation Services for Problem Solving"
+          />
+          <MisiPoint 
+            misi="Empowering Productivity"
+          />
+          <MisiPoint 
+            misi="Optimizing Operations"
+          />
+          <MisiPoint 
+            misi="Offering Affordable and Sustainable Services"
+          />
         </div>
       </div>
     </div>

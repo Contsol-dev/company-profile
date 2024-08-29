@@ -10,7 +10,7 @@ import FooterSection from "@/components/FooterSection";
 
 export default function  About() {
   return (
-    <div className="bg-slate-50 w-screen overflow-x-hidden">
+    <div className="bg-slate-50 overflow-x-hidden hover:cursor-default">
       <Navbar />
       <Hero />
       <Headline />

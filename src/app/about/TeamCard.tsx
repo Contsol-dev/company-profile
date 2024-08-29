@@ -8,21 +8,19 @@ interface TeamCardProps {
 
 export default function TeamCard({ memberPhoto, memberName, memberSpecialist }: TeamCardProps) {
   return (
-    <div className="
-      flex flex-col items-center text-center bg-cont-primary shadow-md rounded-lg
-    ">
-      <div className='overflow-hidden w-full flex items-center h-32 lg:h-96'>
-        <Image 
-          src={memberPhoto} 
-          alt={memberName} 
-          width={150} 
-          height={150} 
-          className="w-full" 
+    <div className="flex flex-col items-center text-center rounded-lg">
+      <div className="relative w-48 h-48">
+        <Image
+          src={memberPhoto}
+          alt={`${memberName}'s photo`}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg shadow-lg shadow-gray-400"
         />
       </div>
-      <div className='py-4 px-2 flex flex-col mb-2 lg:mb-4'>
-        <p className="font-bold text-sm lg:text-xl text-white">{memberName}</p>
-        <p className="text-cont-secondary text-xs lg:text-sm">{memberSpecialist}</p>
+      <div className="pt-2 pb-4 px-2 flex flex-col">
+        <p className="font-bold text-sm lg:text-xl text-cont-primary mb-1">{memberName}</p>
+        <p className="font-bold text-cont-secondary text-xs lg:text-xs uppercase">{memberSpecialist}</p>
       </div>
     </div>
   );
