@@ -37,7 +37,8 @@ const Navbar = () => {
     <nav className="fixed w-full h-fit shadow-xl bg-white z-50">
       <div className="flex justify-between items-center w-full px-4 py-4 2xl:px-16">
         {/* Logo */}
-        <div className="flex flex-row gap-3 items-center ml-4">
+        <div >
+        <Link href="/" className="flex flex-row gap-3 items-center ml-4">
           <button>
             <Image
               src={logo}
@@ -56,8 +57,8 @@ const Navbar = () => {
               </span>
             </div>
           </button>
+          </Link>
         </div>
-
         {/* Menu Links */}
         <div className="hidden lg:flex gap-10 text-lg text-cont-primary">
           <Link
@@ -88,7 +89,7 @@ const Navbar = () => {
               <div className="absolute left-0 top-full w-[300px] lg:w-[600px] rounded-lg bg-white p-6 border shadow-lg z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                   <div>
-                    <h3 className="font-bold text-cont-primary mb-2">
+                    <h3 className="font-bold flex justify-center text-cont-primary mb-1">
                       DEVELOPMENT
                     </h3>
                     <ul className="list-none space-y-2">
@@ -135,7 +136,7 @@ const Navbar = () => {
                     </ul>
                   </div>
                   <div>
-                    <ul className="list-none space-y-2">
+                    <ul className="list-none mt-8 space-y-2">
                       <li>
                         <Link
                           href="/services/iot-development"
@@ -179,7 +180,7 @@ const Navbar = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-bold text-cont-primary mb-2">
+                    <h3 className="font-bold mx-4 text-cont-primary mb-1">
                       CREATIVE
                     </h3>
                     <ul className="list-none space-y-2">

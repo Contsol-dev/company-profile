@@ -36,18 +36,18 @@ interface TestimonialCardProps {
 // TestimonialCard component
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ photo, name, testimonial }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white w-160 h-80 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div className="flex items-center">
         <img
           src={typeof photo === 'string' ? photo : (photo as StaticImageData).src} 
           alt={name}
-          className="w-16 h-16 rounded-full mr-4"
+          className="w-20 h-20 rounded-full mr-4"
         />
         <div>
-          <h4 className="text-lg font-semibold">{name}</h4>
+          <h4 className="text-lg text-cont-primary font-semibold">{name}</h4>
         </div>
       </div>
-      <p className="mt-4 text-gray-600">{testimonial}</p>
+      <p className="mt-12 text-gray-600">{testimonial}</p>
     </div>
   );
 };
