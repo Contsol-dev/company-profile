@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const HeadlineSection = () => {
   return (
-    <div className="relative bg-gray-200 p-8 h-0 pb-[48%] overflow-hidden">
+    <div className="relative bg-gray-200 p-8 h-0 pb-[48%] overflow-hidden headline-section">
       <div className="absolute inset-0 w-full h-full">
         <video
           src={video}
@@ -24,15 +24,15 @@ const HeadlineSection = () => {
           Innovative Solutions
         </h2>
         <div className="flex flex-col md:flex-row md:space-x-4 mt-8">
-          <Link href= "/services/it-manpower-sharing">
-          <button className="w-full md:w-auto mt-4 md:mt-0 px-4 md:px-6 py-2 md:py-3 bg-cont-primary text-white text-base md:text-lg font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
-            Our Services
-          </button>
+          <Link href="/services/it-manpower-sharing">
+            <button className="w-full md:w-auto mt-4 md:mt-0 px-4 md:px-6 py-2 md:py-3 bg-cont-primary text-white text-base md:text-lg font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
+              Our Services
+            </button>
           </Link>
           <Link href="https://wa.me/6288225444313">
-          <button className="w-full md:w-auto mt-4 md:mt-0 px-4 md:px-6 py-2 md:py-3 bg-cont-primary text-white text-base md:text-lg font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
-            Free Consultation
-          </button>
+            <button className="w-full md:w-auto mt-4 md:mt-0 px-4 md:px-6 py-2 md:py-3 bg-cont-primary text-white text-base md:text-lg font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-cont-secondary">
+              Free Consultation
+            </button>
           </Link>
         </div>
       </div>
