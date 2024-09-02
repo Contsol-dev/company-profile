@@ -4,9 +4,9 @@ import iqbalPhoto from '../../assets/members/iqbal.jpg';
 export default function Team() {
   return(
     <div className="relative p-4 lg:px-16 lg:py-12 w-screen flex flex-col mb-12 gap-4">
-      <h3 className="relative z-10 text-cont-primary font-black uppercase">Our Team</h3>
-      <h2 className="relative z-10 text-black font-bold uppercase text-4xl">
-        We Work With Team
+      <h3 className="relative z-10 text-cont-primary font-black uppercase text-center">Our Team</h3>
+      <h2 className="relative z-10 text-black font-bold uppercase text-4xl text-center mb-4">
+        We Work With <span className="text-cont-secondary">Team</span>
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8">
         <TeamCard 

@@ -7,10 +7,10 @@ export default function How() {
 
   return(
     <div className="p-4 lg:px-16 lg:py-12 w-screen flex flex-col mb-12 gap-4">
-      <h2 className="relative z-10 text-black font-bold uppercase text-4xl text-center lg:text-left">
-        How We Work
+      <h2 className="relative z-10 text-black font-bold uppercase text-4xl text-center mb-4">
+        <span className="text-cont-secondary">How</span> We Work
       </h2>
-      <div className="relative flex flex-col lg:flex-row mb-12 gap-4 ">
+      <div className="relative flex flex-col lg:flex-row mb-12 gap-4 lg:gap-12 ">
         <div className="w-full lg:w-1/3 flex flex-row lg:flex-col overflow-x-auto gap-4">
           <HowButton 
             onClick={() => setSection(1)}
