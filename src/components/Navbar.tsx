@@ -285,149 +285,151 @@ const Navbar = () => {
             >
               About
             </Link>
-            <button
-              className="text-cont-primary font-bold hover:text-cont-secondary transition-all flex items-center"
-              onClick={toggleDropdown}
-            >
-              Services
-              <GoTriangleDown
-                className={`ml-2 transition-transform ${
-                  isDropdownOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-            {isDropdownOpen && (
-              <div className="bg-white border rounded-lg mt-2 p-4">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  <div>
-                    <h3 className="font-bold flex justify-center text-cont-primary mb-1">
-                      DEVELOPMENT
-                    </h3>
-                    <ul className="list-none space-y-2">
-                      <li>
-                        <Link
-                          href="/services/it-manpower-sharing"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          IT Manpower Sharing
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/product-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Product Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/website-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Website Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/application-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Application Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/mobile-app-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Mobile App Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/iot-development"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          IoT Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href=""
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Data Analysis
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href=""
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Network Installation
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href=""
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          AI Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href=""
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          UI / UX Design
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="font-bold mx-4 text-center text-cont-primary mb-1">
-                      CREATIVE
-                    </h3>
-                    <ul className="list-none space-y-2">
-                      <li>
-                        <Link
-                          href="/services/logo-design"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Logo Design
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/social-media-management"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Social Media Management
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/photo-product"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Photo Product
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/services/video-ads-production"
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                          Video Ads Production
-                        </Link>
-                      </li>
-                    </ul>
+            <div className="relative" ref={dropdownRef}>
+              <button
+                className="text-cont-primary font-bold hover:text-cont-secondary transition-all flex items-center"
+                onClick={toggleDropdown}
+              >
+                Services
+                <GoTriangleDown
+                  className={`ml-2 transition-transform ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isDropdownOpen && (
+                <div className="bg-white border rounded-lg mt-2 p-4">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div>
+                      <h3 className="font-bold flex justify-center text-cont-primary mb-1">
+                        DEVELOPMENT
+                      </h3>
+                      <ul className="list-none space-y-2">
+                        <li>
+                          <Link
+                            href="/services/it-manpower-sharing"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            IT Manpower Sharing
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/product-development"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Product Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/website-development"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Website Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/application-development"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Application Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/mobile-app-development"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Mobile App Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/iot-development"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            IoT Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href=""
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Data Analysis
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href=""
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Network Installation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href=""
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            AI Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href=""
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            UI / UX Design
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-bold mx-4 text-center text-cont-primary mb-1">
+                        CREATIVE
+                      </h3>
+                      <ul className="list-none space-y-2">
+                        <li>
+                          <Link
+                            href="/services/logo-design"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Logo Design
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/social-media-management"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Social Media Management
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/photo-product"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Photo Product
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/video-ads-production"
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
+                          >
+                            Video Ads Production
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
             <Link
               className="text-cont-primary font-bold hover:text-cont-secondary transition-all"
               href="/portfolio"
