@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import iconCPU from "@/assets/icons/ic_cpu.png";
+import iconApp from "@/assets/icons/ic_application.png";
 import iconMobile from "@/assets/icons/ic_mobile_app.png";
 import iconTraining from "@/assets/icons/ic_it_training.png";
 import iconNetwork from "@/assets/icons/ic_router.png";
@@ -18,49 +19,55 @@ const itServices = [
   {
     icon: iconTraining,
     title: "IT Manpower Sharing",
-    description: "Providing skilled IT professionals for your projects.",
+    description: "Providing skilled IT professionals to supplement your team and ensure project success.",
   },
   {
     icon: iconLaptop,
     title: "Product Development",
-    description: "End-to-end product development services tailored to your needs.",
+    description: "Offering comprehensive product development services, from concept to launch, tailored to your business needs.",
   },
   {
     icon: iconWebsite,
     title: "Website Development",
-    description: "Building responsive and engaging websites to enhance your online presence.",
+    description: "Building responsive, user-friendly, and engaging websites to enhance your online presence.",
+  },
+  {
+    icon: iconApp,
+    title: "Application Development",
+    description: "Developing custom software applications designed to solve your unique business challenges.",
   },
   {
     icon: iconMobile,
     title: "Mobile App Development",
-    description: "Creating high-performance mobile apps for various platforms.",
+    description: "Creating high-performance, cross-platform mobile apps for iOS and Android.",
   },
   {
     icon: iconService,
     title: "IoT Development",
-    description: "Developing innovative IoT solutions to connect your devices seamlessly.",
+    description: "Innovating and connecting your devices through seamless IoT solutions for smarter operations.",
   },
   {
     icon: iconCPU,
     title: "Data Analysis",
-    description: "Transforming raw data into valuable insights for informed decision-making.",
+    description: "Turning raw data into actionable insights through advanced data analysis techniques.",
   },
   {
     icon: iconNetwork,
     title: "Network Installation",
-    description: "Setting up robust and secure networks for your business.",
+    description: "Designing and implementing robust, secure network infrastructures for your business.",
   },
   {
     icon: iconAI,
     title: "AI Development",
-    description: "Implementing AI solutions to automate processes and enhance efficiency.",
+    description: "Integrating AI technologies to automate tasks and improve business efficiency.",
   },
   {
     icon: iconDesign,
     title: "UI / UX Design",
-    description: "Crafting user-friendly interfaces and enhancing user experiences.",
+    description: "Designing intuitive user interfaces and creating seamless user experiences.",
   },
 ];
+
 
 const creativeServices = [
   {
