@@ -56,7 +56,7 @@ const PhotoServicesAccordion = () => {
           <div
             key={index}
             onClick={() => handleIndex(index)}
-            className={`relative cursor-pointer transition-all duration-300 ease-in-out ${
+            className={`relative cursor-pointer transition-all duration-500 ease-in-out ${
               activeIndex === index
                 ? "flex-shrink-0 sm:w-60 w-40 md:w-80"
                 : "w-auto"
@@ -71,7 +71,7 @@ const PhotoServicesAccordion = () => {
         ))}
       </div>
       {activeIndex !== null && (
-        <div className="text-gray-100 p-5 w-full border-b border-gray-400">
+        <div className="text-gray-100 p-5 w-full transition-all duration-500 ease-in-out">
           <h3 className="text-lg font-semibold">
             {services[activeIndex].title}
           </h3>

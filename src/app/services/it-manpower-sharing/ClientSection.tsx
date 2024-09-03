@@ -9,7 +9,7 @@ import { Autoplay } from "swiper/modules";
 
 const ClientSection = () => {
   return (
-    <section className="flex flex-col items-center p-10 bg-gray-100 px-40">
+    <section className="flex flex-col items-center p-10 bg-gray-100 px-20">
       <h2 className="text-5xl font-bold text-sky-950 text-center mb-5 font-sans">
         Our Clients
       </h2>

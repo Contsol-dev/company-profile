@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/ai-development.jpg";
 
 export default function AiDevelopment() {
   const accordionData = [
@@ -48,6 +48,7 @@ export default function AiDevelopment() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="AI Development"
         subhead1="Looking to Leverage Artificial Intelligence to Automate and Optimize

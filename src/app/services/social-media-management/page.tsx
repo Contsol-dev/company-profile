@@ -2,8 +2,8 @@
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
-import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import HireSection from "../components/HireSectionInvert";
+import photo from "../../../assets/social-media-management.jpg";
 import PricingSection from "../components/PricingSection";
 
 export default function SocialMediaManagement() {
@@ -93,6 +93,7 @@ export default function SocialMediaManagement() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Social Media Management"
         subhead1="Looking to Enhance Your Business Presence on Social Media?"

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/application-development.jpg";
 
 export default function ApplicationDevelopment() {
   const accordionData = [
@@ -50,6 +50,7 @@ export default function ApplicationDevelopment() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Application Development"
         subhead1="Struggling to Find the Right Application Solution for Your Business Needs?"

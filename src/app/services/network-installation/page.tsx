@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/network-installation.jpg";
 
 export default function NetworkInstallation() {
   const accordionData = [
@@ -48,6 +48,7 @@ export default function NetworkInstallation() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Network Installation"
         subhead1="Looking to Ensure Your Business Network Runs Smoothly and Securely?"

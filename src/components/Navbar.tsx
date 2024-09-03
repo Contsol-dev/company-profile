@@ -37,26 +37,28 @@ const Navbar = () => {
     <nav className="fixed w-full h-fit shadow-xl bg-white z-50">
       <div className="flex justify-between items-center w-full px-4 py-4 2xl:px-16">
         {/* Logo */}
-        <div >
-        <Link href="/" className="flex flex-row gap-3 items-center ml-4">
-          <button>
-            <Image
-              src={logo}
-              alt="Logo"
-              width="45"
-              height="45"
-              className="cursor-pointer"
-              priority
-            />
-          </button>
-          <button>
-            <div className="text-cont-primary ltr font-[ITC Avant Garde] ml-0 leading-[0.88882623] text-lg normal-case tracking-[-0.02em]">
-              <span className="text-cont-primary font-bold text-lgg">Cont</span>
-              <span className="text-cont-primary font-normal text-lgg">
-                Solutions
-              </span>
-            </div>
-          </button>
+        <div>
+          <Link href="/" className="flex flex-row gap-3 items-center ml-4">
+            <button>
+              <Image
+                src={logo}
+                alt="Logo"
+                width="45"
+                height="45"
+                className="cursor-pointer"
+                priority
+              />
+            </button>
+            <button>
+              <div className="text-cont-primary ltr font-[ITC Avant Garde] ml-0 leading-[0.88882623] text-lg normal-case tracking-[-0.02em]">
+                <span className="text-cont-primary font-bold text-lgg">
+                  Cont
+                </span>
+                <span className="text-cont-primary font-normal text-lgg">
+                  Solutions
+                </span>
+              </div>
+            </button>
           </Link>
         </div>
         {/* Menu Links */}
@@ -147,7 +149,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href=""
+                          href="/services/data-analysis"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Data Analysis
@@ -155,7 +157,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href=""
+                          href="/services/network-installation"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           Network Installation
@@ -163,7 +165,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href=""
+                          href="/services/ai-development"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           AI Development
@@ -171,7 +173,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href=""
+                          href="/services/ui-ux-design"
                           className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
                         >
                           UI / UX Design
@@ -239,7 +241,7 @@ const Navbar = () => {
         {/* Contact Us Button */}
         <div className="hidden lg:flex hover:scale-110 transition-all">
           <Link
-            className="bg-cont-primary text-white px-6 py-3 rounded-lg font-bold text-cont-primary"
+            className="bg-cont-primary text-white px-6 py-3 rounded-lg font-bold xl:text-xl lg:text-lg md:text-base text-xs hover:bg-cont-secondary hover:transition-all duration-500 ease-in-out"
             href="/contact-us"
           >
             Contact Us

@@ -51,6 +51,7 @@ export default function ProductDevelopment() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Product Development"
         subhead1="Struggling to turn your ideas into tangible, successful products?"

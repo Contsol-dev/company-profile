@@ -8,7 +8,7 @@ import {
 const WhySection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index:any) => {
+  const handleToggle = (index: any) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -57,8 +57,8 @@ const WhySection = () => {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-100 px-40">
-      <div className="md:w-1/3 xl:text-8xl lg:text-7xl md:text-4xl sm:text-8xl text-8xl font-bold text-sky-950 font-sans">
+    <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-100 px-20">
+      <div className="md:w-1/3 xl:text-8xl lg:text-7xl md:text-4xl sm:text-8xl text-6xl font-bold text-sky-950 font-sans">
         Why Choose Us?
       </div>
       <div className="md:w-2/3 md:ml-8 mt-8 md:mt-0">
@@ -78,9 +78,9 @@ const WhySection = () => {
               <h1 className="xl:text-xl lg:text-lg text-sm sm:text-base text-gray-700 lg:text-left font-bold mb-4 flex justify-between items-center">
                 {item.title}
                 {activeIndex === index ? (
-                  <ChevronUpIcon className="w-6 h-6" />
+                  <ChevronUpIcon className="w-6 h-6 ms-3" />
                 ) : (
-                  <ChevronDownIcon className="w-6 h-6" />
+                  <ChevronDownIcon className="w-6 h-6 ms-3" />
                 )}
               </h1>
             </button>

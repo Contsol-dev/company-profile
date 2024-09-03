@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/data-analysis.jpg";
 
 export default function DataAnalysis() {
   const accordionData = [
@@ -53,6 +53,7 @@ export default function DataAnalysis() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Data Analysis"
         subhead1="Looking to Make Smarter, Data-Driven Business Decisions?"

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/ui-ux-design.jpg";
 
 export default function UiUxDesign() {
   const accordionData = [
@@ -48,6 +48,7 @@ export default function UiUxDesign() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="UI/UX Design"
         subhead1="Looking to Create an Engaging and Intuitive User Experience?"

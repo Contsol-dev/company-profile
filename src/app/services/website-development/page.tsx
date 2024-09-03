@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/website-development.jpg";
 
 export default function WebsiteDevelopment() {
   const accordionData = [
@@ -47,6 +47,7 @@ export default function WebsiteDevelopment() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Website Development"
         subhead1="Looking to Build an Engaging and Professional Online Presence?"

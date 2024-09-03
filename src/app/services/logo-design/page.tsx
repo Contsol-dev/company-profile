@@ -2,8 +2,8 @@
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
-import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import HireSection from "../components/HireSectionInvert";
+import photo from "../../../assets/logo-design.jpg";
 import PricingSection from "../components/PricingSection";
 
 export default function LogoDesign() {
@@ -87,6 +87,7 @@ export default function LogoDesign() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Logo Design"
         subhead1="Looking to Create a Strong Visual Identity for Your Brand?"

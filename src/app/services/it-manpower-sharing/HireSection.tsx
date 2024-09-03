@@ -97,7 +97,7 @@ const HireSection = () => {
       <div className="mt-10">
         <a
           href="https://wa.me/6288225444313"
-          className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold xl:text-xl lg:text-lg md:text-base text-sm hover:bg-cont-secondary"
+          className="bg-cont-primary text-white px-6 py-3 rounded-lg font-bold xl:text-xl lg:text-lg md:text-base text-xs hover:bg-cont-secondary hover:transition-all duration-500 ease-in-out"
         >
           Free Consultancy
         </a>

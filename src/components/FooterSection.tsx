@@ -22,7 +22,7 @@ const FooterSection = () => {
             <h3 className="font-bold text-3xl leading-none">SOLUTIONS</h3>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
           <div>
             <div className="mb-4 w-full">
               <iframe
@@ -39,13 +39,22 @@ const FooterSection = () => {
               <a href="#" className="hover:text-gray-400">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://www.tiktok.com/@contsol?lang=en" className="hover:text-gray-400">
+              <a
+                href="https://www.tiktok.com/@contsol?lang=en"
+                className="hover:text-gray-400"
+              >
                 <FaTiktok size={24} />
               </a>
-              <a href="https://www.instagram.com/contsol.dev/" className="hover:text-gray-400">
+              <a
+                href="https://www.instagram.com/contsol.dev/"
+                className="hover:text-gray-400"
+              >
                 <FaInstagram size={24} />
               </a>
-              <a href="https://www.youtube.com/channel/UCo_BYx1dFMSVs4vS9m2PsfQ" className="hover:text-gray-400">
+              <a
+                href="https://www.youtube.com/channel/UCo_BYx1dFMSVs4vS9m2PsfQ"
+                className="hover:text-gray-400"
+              >
                 <FaYoutube size={24} />
               </a>
             </div>
@@ -54,69 +63,142 @@ const FooterSection = () => {
             <h3 className="font-bold mb-4">COMPANY</h3>
             <ul className="space-y-2">
               <li className="mb-2">
-                <a href="/about">{">"} <span className="hover:underline">About</span></a>
+                <a href="/about">
+                  {">"} <span className="hover:underline">About</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/contact-us">{">"} <span className="hover:underline">Contact Us</span></a>
+                <a href="/contact-us">
+                  {">"} <span className="hover:underline">Contact Us</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/portfolio">{">"} <span className="hover:underline">Portfolio</span></a>
+                <a href="/portfolio">
+                  {">"} <span className="hover:underline">Portfolio</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/careers">{">"} <span className="hover:underline">Careers</span></a>
+                <a href="/careers">
+                  {">"} <span className="hover:underline">Careers</span>
+                </a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-4">OUR SOLUTIONS</h3>
+            <h3 className="font-bold mb-4">DEVELOPMENT</h3>
             <ul className="space-y-2">
               <li className="mb-2">
-                <a href="/services/it-manpower-sharing">{">"} <span className="hover:underline">IT Manpower Sharing</span></a>
+                <a href="/services/it-manpower-sharing">
+                  {">"}{" "}
+                  <span className="hover:underline">IT Manpower Sharing</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/services/product-development">{">"} <span className="hover:underline">Product Development</span></a>
+                <a href="/services/product-development">
+                  {">"}{" "}
+                  <span className="hover:underline">Product Development</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/services/website-development">{">"} <span className="hover:underline">Website Development</span></a>
+                <a href="/services/website-development">
+                  {">"}{" "}
+                  <span className="hover:underline">Website Development</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/services/mobile-app-development">{">"} <span className="hover:underline">Mobile App Development</span></a>
+                <a href="/services/application-development">
+                  {">"}{" "}
+                  <span className="hover:underline">
+                    Application Development
+                  </span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/services/iot-development">{">"} <span className="hover:underline">IoT Development</span></a>
+                <a href="/services/mobile-app-development">
+                  {">"}{" "}
+                  <span className="hover:underline">
+                    Mobile App Development
+                  </span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="#">{">"} <span className="hover:underline">Data Analysis</span></a>
+                <a href="/services/iot-development">
+                  {">"} <span className="hover:underline">IoT Development</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="#">{">"} <span className="hover:underline">Network Installation</span></a>
+                <a href="/services/data-analysis">
+                  {">"} <span className="hover:underline">Data Analysis</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="#">{">"} <span className="hover:underline">AI Engineering</span></a>
+                <a href="/services/network-installation">
+                  {">"}{" "}
+                  <span className="hover:underline">Network Installation</span>
+                </a>
               </li>
               <li className="mb-2">
-                <a href="#">{">"} <span className="hover:underline">UI / UX Design</span></a>
+                <a href="/services/ai-development">
+                  {">"} <span className="hover:underline">AI Development</span>
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/services/ui-ux-design">
+                  {">"} <span className="hover:underline">UI / UX Design</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold mb-4">CREATIVE</h3>
+            <ul className="space-y-2">
+              <li className="mb-2">
+                <a href="/services/logo-design">
+                  {">"} <span className="hover:underline">Logo Design</span>
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/services/social-media-management">
+                  {">"}{" "}
+                  <span className="hover:underline">
+                    Social Media Management
+                  </span>
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/services/photo-product">
+                  {">"} <span className="hover:underline">Photo Product</span>
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/services/video-ads-production">
+                  {">"}{" "}
+                  <span className="hover:underline">Video Ads Production</span>
+                </a>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="font-bold mb-4">CONTACT US</h3>
             <p className="mb-2">
-              <span className="font-semibold">E-mail :</span> hello@contsoldev.com
+              <span className="font-semibold">E-mail :</span>{" "}
+              <a href="mailto:contsolhelp@gmail.com">contsolhelp@gmail.com</a>
             </p>
             <p className="mb-2">
-              <span className="font-semibold">Whatsapp Call / Text :</span> +6288-225-444-313
+              <span className="font-semibold">Whatsapp Call / Text :</span>{" "}
+              +6288-225-444-313
             </p>
             <p className="mb-4">
               <span className="font-semibold">Office Yogyakarta :</span>
               <br />
-              Jl. Persatuan 3 No.28, RT.07/RW.20, Demangan, Maguwoharjo, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+              Jl. Persatuan 3 No.28, RT.07/RW.20, Demangan, Maguwoharjo, Kec.
+              Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
             </p>
           </div>
         </div>
       </div>
       <hr className="mx-24 mt-16 border-t-2 border-white opacity-50" />
-      <div className="ml-24 mt-2 text-start text-sm">
+      <div className="mx-24 mt-2 text-start text-sm">
         <p>© COPYRIGHT 2024. ALL RIGHTS RESERVED BY CONT SOLUTIONS</p>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/photo-product.jpg";
 import PhotoServicesAccordion from "./PhotoServicesAccordion";
 import PricingSection from "../components/PricingSection";
 
@@ -100,6 +100,7 @@ export default function PhotoProduct() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Photo Product"
         subhead1="Looking to Showcase Your Products in a Stunning and Attention-Grabbing Way?"
@@ -118,7 +119,7 @@ export default function PhotoProduct() {
         </div>
       </div>
       <PricingSection packages={packages1} />
-      <div className="flex flex-col items-center pt-10 bg-gray-100 px-20">
+      <div className="flex flex-col items-center pt-3 bg-gray-100 px-20">
         <div className="xl:text-xl lg:text-lg md:text-xl sm:text-xl text-md font-bold text-sky-950 font-sans">
           For Large Products or Products with Models:
         </div>

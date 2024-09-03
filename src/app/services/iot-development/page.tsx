@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/iot-development.jpg";
 
 export default function IotDevelopment() {
   const accordionData = [
@@ -52,6 +52,7 @@ export default function IotDevelopment() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="IoT Development"
         subhead1="Looking to Connect the Physical and Digital Worlds to Enhance Your Business Efficiency?"

@@ -2,8 +2,8 @@
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
-import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import HireSection from "../components/HireSectionInvert";
+import photo from "../../../assets/video-ads-production.jpg";
 import PricingSection from "../components/PricingSection";
 
 export default function VideoAdsProduction() {
@@ -129,6 +129,7 @@ export default function VideoAdsProduction() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Video Ads Production"
         subhead1="Looking to Promote Your Products or Services with Engaging and Memorable Video Ads?"
@@ -140,7 +141,7 @@ export default function VideoAdsProduction() {
       />
       <HireSection accordionData={accordionData} />
       <div className="flex flex-col items-center bg-gray-100 space-y-12 px-20">
-        <div className="xl:text-4xl lg:text-3xl md:text-4xl sm:text-4xl text-2xl font-bold text-sky-950 font-sans">
+        <div className="xl:text-4xl lg:text-3xl md:text-4xl sm:text-4xl text-2xl font-bold text-sky-950 font-sans mt-10">
           Video Ads Production
         </div>
       </div>

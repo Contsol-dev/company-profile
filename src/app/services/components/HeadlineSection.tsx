@@ -45,16 +45,16 @@ const HeadlineSection = ({
         <p className="xl:mx-70 lg:mx-60 md:mx-40 xl:mx-20 mx-10 xl:text-2xl lg:text-xl md:text-base text-xs sm:text-sm text-white text-center font-sans">
           {caption}
         </p>
-        <div className="xl:mt-8 lg:mt-8 md:mt-5 mt-5 flex justify-center space-x-4">
+        <div className="xl:mt-8 lg:mt-8 md:mt-5 mt-5 flex justify-center space-x-4 mx-10">
           <Link
             href="https://wa.me/6288225444313"
-            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold xl:text-xl lg:text-lg md:text-base text-xs hover:bg-cont-secondary hover:transition-all duration-500 ease-in-out"
+            className="bg-cont-primary text-white px-6 py-3 rounded-lg font-bold xl:text-xl lg:text-lg md:text-base text-xs hover:bg-cont-secondary hover:transition-all duration-500 ease-in-out"
           >
             {button1}
           </Link>
           <Link
             href="/contact-us"
-            className="bg-cont-primary text-white px-6 py-3 rounded-full font-bold xl:text-xl lg:text-lg md:text-base text-xs hover:bg-cont-secondary hover:transition-all duration-500 ease-in-out"
+            className="bg-cont-primary text-white px-6 py-3 rounded-lg font-bold xl:text-xl lg:text-lg md:text-base text-xs hover:bg-cont-secondary hover:transition-all duration-500 ease-in-out"
           >
             {button2}
           </Link>

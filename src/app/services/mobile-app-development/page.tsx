@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import HeadlineSection from "../components/HeadlineSection";
 import HireSection from "../components/HireSection";
-import photo from "../../../assets/product-development.jpg";
+import photo from "../../../assets/mobile-app-development.jpg";
 
 export default function MobileAppDevelopment() {
   const accordionData = [
@@ -51,6 +51,7 @@ export default function MobileAppDevelopment() {
   return (
     <>
       <Navbar />
+      <div className="h-10"></div>
       <HeadlineSection
         title="Mobile App Development"
         subhead1="Looking to Turn Your Ideas into Innovative and User-Friendly Mobile Apps?"
