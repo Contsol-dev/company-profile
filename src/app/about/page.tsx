@@ -6,6 +6,7 @@ import VisiMisi from "./VisiMisi";
 import Team from "./Team";
 import Why from "./Why";
 import How from "./How";
+import Cta from "./Cta"
 import FooterSection from "@/components/FooterSection";
 
 export default function  About() {

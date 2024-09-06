@@ -1,5 +1,18 @@
 import TeamCard from "./TeamCard";
-import iqbalPhoto from '../../assets/members/iqbal.jpg';
+import iqbalPhoto from '../../assets/members/iqbal.png';
+import dikiPhoto from '../../assets/members/diki.png';
+import gustianPhoto from '../../assets/members/gustian.png';
+import husnanPhoto from '../../assets/members/husnan.png';
+import lakhaPhoto from '../../assets/members/islakha.png';
+import sevaPhoto from '../../assets/members/seva.png';
+import rizalPhoto from '../../assets/members/rizal.png';
+import farelPhoto from '../../assets/members/farel.png';
+import athayaPhoto from '../../assets/members/athaya.png';
+import vanyaPhoto from '../../assets/members/vanya.png';
+import nekiPhoto from '../../assets/members/neki.png';
+import totiPhoto from '../../assets/members/toti.png';
+import jujungPhoto from '../../assets/members/jujung.png';
+import muslimPhoto from '../../assets/members/muslim.png';
 
 export default function Team() {
   return(
@@ -17,32 +30,32 @@ export default function Team() {
         <TeamCard 
           memberName="Muhammad Islakha" 
           memberSpecialist="AI Engineer & Data Analyst" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={lakhaPhoto}
         />
         <TeamCard 
           memberName="Rizky Gustiantoro" 
           memberSpecialist="Mobile Developer & Website Developer" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={gustianPhoto}
         />
         <TeamCard 
           memberName="Rizal Hanifa P." 
           memberSpecialist="Project Manager & Business Development" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={rizalPhoto}
         />
         <TeamCard 
           memberName="Seva Giantama F." 
           memberSpecialist="UI/UX Design & Mobile Developer" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={sevaPhoto}
         />
         <TeamCard 
           memberName="Refanda Dicky P." 
           memberSpecialist="Network Engineer & Field Technician" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={dikiPhoto}
         />
         <TeamCard 
           memberName="Farel Abid Y." 
           memberSpecialist="Creative Developer" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={farelPhoto}
         />
         <TeamCard 
           memberName='Aditya "Alex" P.' 
@@ -52,37 +65,37 @@ export default function Team() {
         <TeamCard 
           memberName="Husnan Maulana S." 
           memberSpecialist="Graphic Designer" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={husnanPhoto}
         />
         <TeamCard 
           memberName="Athaya Nuha A." 
           memberSpecialist="Social Media Specialist" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={athayaPhoto}
         />
         <TeamCard 
           memberName="Vanya Desitarina D." 
           memberSpecialist="Social Media Specialist" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={vanyaPhoto}
         />
         <TeamCard 
           memberName="Neki Ardriana" 
           memberSpecialist="Social Media Specialist" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={nekiPhoto}
         />
         <TeamCard 
           memberName='Totik "Totot"' 
           memberSpecialist="Emotional Support Specialist" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={totiPhoto}
         />
         <TeamCard 
           memberName='Munyo "Jujung" Jr.' 
           memberSpecialist="Emotional Support Specialist" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={jujungPhoto}
         />
         <TeamCard 
           memberName='Muslim "Musmus" Nekokuro' 
           memberSpecialist="Emotional Support Specialist" 
-          memberPhoto={iqbalPhoto}
+          memberPhoto={muslimPhoto}
         />
       </div>
     </div>
