@@ -1,68 +1,57 @@
-import Link from "next/link";
-import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // Import core Swiper styles
+import { portfolioData } from "@/data/portfolioData";
 
-const PortofolioSection = () => {
-  const cards = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      title: "BacaLagi",
-      description:
-        'The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.',
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      title: "TerbangAja",
-      description:
-        "Beautiful interiors, stunning images, and carefully crafted layouts that bring your ideas to life.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      title: "EcoSphere",
-      description:
-        "Experience the essence of modern design with our contemporary layouts and sleek finishes.",
-    },
-  ];
-
+const PortfolioSection = () => {
   return (
-    <section className="py-12 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <h1 className="mb-8 text-4xl md:text-5xl lg:text-6xl text-center text-cont-primary">
-          Berikut adalah portofolio kami
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cards.map((card, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <div className="relative h-56">
+    <section className="py-6 bg-gray-100">
+      <h1 className="font-bold text-cont-primary text-3xl text-center mb-6">
+        Development Portfolio
+      </h1>
+
+      <Swiper
+        spaceBetween={0}
+        slidesPerView={3}
+        grabCursor={true}
+        loop={true}
+        breakpoints={{
+          640: { slidesPerView: 2 }, 
+          768: { slidesPerView: 3 }, 
+          1024: { slidesPerView: 4 }, 
+        }}
+      >
+        {portfolioData.map((item) => (
+          <SwiperSlide key={item.id}>
+            <div className="relative w-full h-[60vh] max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+              
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-black bg-opacity-50">
                 <img
-                  src={card.image}
-                  alt={`card-image-${index}`}
+                  src={item.overlay}
+                  alt={`${item.name} overlay`}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h5 className="text-xl md:text-2xl font-semibold text-cont-primary mb-2">
-                  {card.title}
-                </h5>
-                <p className="text-gray-700 text-sm md:text-base">
-                  {card.description}
-                </p>
+
+              <div className="absolute bottom-0 left-0 p-4 bg-cont-primary bg-opacity-10 rounded-lg text-white">
+                <h3 className="text-lg font-bold">{item.name}</h3>
+                <p className="text-sm">{item.service}</p>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <Link href="/portfolio">
-          <button className="inline-block bg-cont-primary text-white px-4 md:px-6 py-2 md:py-3 rounded-lg shadow-lg font-semibold transition duration-300 ease-in-out hover:bg-cont-secondary">
-            Tampilkan Lebih Banyak
-          </button>
-          </Link>
-        </div>
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <h1 className="font-bold text-cont-primary text-3xl text-center my-6">
+        Creative Portfolio
+      </h1>
     </section>
   );
 };
 
-export default PortofolioSection;
+export default PortfolioSection;

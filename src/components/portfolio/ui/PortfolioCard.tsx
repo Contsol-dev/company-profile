@@ -29,7 +29,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ portfolio }) => {
       <div className="relative w-full p-4 text-black bg-white">
         <h3 className="text-xl font-semibold transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">{portfolio.name}</h3>
         <p className="text-sm text-gray-500 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">{portfolio.type}</p>
-        <p className="mt-2 text-gray-700 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">{portfolio.overview}</p>
+        <p className="mt-2 text-sm text-gray-700 line-clamp-2 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">{portfolio.overview}</p>
       </div>
     </div>
   );
